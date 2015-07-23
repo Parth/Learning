@@ -1,0 +1,1 @@
+javac -cp ../../libs/slf4j.jar;../../libs/log4j.jar;../../libs/log4j.jar;../../libs/lwjgl.jar;../../libs/lwjgl_util.jar;../../libs/jbox2d.jar; -d ../../out/production/FOGDESTROYER/ ../../src/PhysicsDemo.java ../../src/PhysicsDemo.java ../../src/Block.java ../../src/Grid.java ../../src/GameObject.java ../../src/Wall.java ../../src/Cell.java
