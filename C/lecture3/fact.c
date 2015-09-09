@@ -15,7 +15,7 @@ int fact(int n) {
 }
 
 int main(int argc, char** argv) {
-	int a = 0;
+	int a = 0; //fsalkdjf
 	int result = 0;
 
 	printf("Input a number\n");
