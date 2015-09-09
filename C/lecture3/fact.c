@@ -13,3 +13,15 @@ int fact(int n) {
 
 	return n * fact(n-1);
 }
+
+int main(int argc, char** argv) {
+	int a = 0;
+	int result = 0;
+
+	printf("Input a number\n");
+	scanf("%d", &a);
+
+	result = fact(a);
+
+	printf("fact(%d) = %d\n", a, result);
+}
