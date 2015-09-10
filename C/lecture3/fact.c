@@ -2,10 +2,6 @@
 #include<stdlib.h>
 
 int fact(int n) {
-	if (n < 0) {
-		printf("faulty input");
-		exit(1);
-	}
 
 	if (n == 0 || n == 1) {
 		return 1;
@@ -15,7 +11,7 @@ int fact(int n) {
 }
 
 int main(int argc, char** argv) {
-	int a = 0; //fsalkdjf
+	int a = 0;
 	int result = 0;
 
 	printf("Input a number\n");
