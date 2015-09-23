@@ -32,8 +32,6 @@ int main(int argc, char** args) {
 		}
 
 		fscanf(file, "\n");
-		printf("\n");
-
 	}
 
 	for (i = 0; i < row; i++) {
@@ -44,8 +42,11 @@ int main(int argc, char** args) {
 		printf("\n");
 	}
 
+	for (i = 0; i < row; i++) {
+		free(matrix[j]);
+	}
+	free(matrix);
 	fclose(file);
-
 
 	return 0;
 }
