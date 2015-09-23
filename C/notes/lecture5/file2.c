@@ -43,7 +43,7 @@ int main(int argc, char** args) {
 	}
 
 	for (i = 0; i < row; i++) {
-		free(matrix[j]);
+		free(matrix[i]);
 	}
 	free(matrix);
 	fclose(file);
