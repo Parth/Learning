@@ -20,19 +20,32 @@ int main(int argc, char** args) {
 
 	fscanf(file, "%d %d\n", &row, &col);
 
+	int** matrix = (int **) malloc(sizeof(int*) * row);
+
 	int i, j;
 	for (i = 0; i < row; i++) {
-		for (j = 0; j < cols; j++) {
+		matrix[i] = (int*) malloc(sizeof(int) * col);
+		for (j = 0; j < col; j++) {
 			int temp;
 			fscanf(file, "%d", &temp);
-			printf("%d ", temp);
+			matrix[i][j] = temp;
 		}
-		fscanf("\n");
+
+		fscanf(file, "\n");
 		printf("\n");
 
 	}
 
+	for (i = 0; i < row; i++) {
+		for (j = 0; j < col; j++) {
+			printf("%d ", matrix[i][j]);
+		}
+
+		printf("\n");
+	}
+
 	fclose(file);
+
 
 	return 0;
 }
