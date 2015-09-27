@@ -8,7 +8,22 @@ struct node {
 
 typedef struct node node;
 
+int error() {
+	printf("error\n");
+	return 1;
+}
+
 int main(int argn, char** args) {
+	if (argn != 2) {
+		return error();
+	}
+
+	FILE* file = fopen(args[1], "r");
+
+	if (file == NULL) {
+		return error();
+	}
+
 	node *root;
 	root = (node *) malloc(sizeof(node));
 
