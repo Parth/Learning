@@ -8,7 +8,6 @@ struct node {
 typedef struct node node;
 
 int size(node* root) {
-
 	if (root == NULL) {
 		return 0;
 	}
