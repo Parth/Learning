@@ -107,13 +107,50 @@ void insert(table* table, int value) {
 	int index = value % 10000;
 	if (table -> rows[index] == NULL) {
 		table -> rows[index] = new(value, NULL);
+		printf("inserted\n");
 	} else {
-		append(table -> rows[index], value);
+		if (contains(table -> rows[index], value)) {
+			printf("duplicate\n");
+		} else {
+			printf("inserted\n");
+			append(table -> rows[index], value);
+		}
 	}
 }
 
-int main() {
+int main(int argc, char** args) {
+	if (argc != 2) {
+		return error();
+	}
+
+	FILE* file = fopen(args[1], "r");
+
+	if (file == NULL) {
+		return error();
+	}
+
 	table* table = new_table();
-	print_table(table);
+
+	char opperation = 0;
+	int value = 0;
+	while ( fscanf(file, "%c %d\n", &opperation, &value) == 2) {
+		if (opperation != 'i' && opperation != 's') {
+			error();
+			continue;
+		}
+
+		if (opperation == 'i') {
+			insert(table, value);
+		}
+
+		if (opperation == 's') {
+			if (contains(table -> rows[value % 10000], value)) {
+				printf("present\n");
+			} else {
+				printf("absent\n");
+			}
+		}
+	}
+	
 	return 0;
 }
