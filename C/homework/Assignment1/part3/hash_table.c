@@ -101,7 +101,15 @@ void print_table(table* table) {
 		 printf("%d:\t", i);
 		 print_list(table -> rows[i]);
 	}
-	
+}
+
+void insert(table* table, int value) {
+	int index = value % 10000;
+	if (table -> rows[index] == NULL) {
+		table -> rows[index] = new(value, NULL);
+	} else {
+		append(table -> rows[index], value);
+	}
 }
 
 int main() {
