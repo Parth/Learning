@@ -18,17 +18,17 @@ int main(int argc, char** args) {
 		return error();
 	}
 
-	int rows = 0;
-	int cols = 0;
-	fscanf(file, "%d\t%d\n", &rows, &cols);
+	int rows1 = 0;
+	int cols1 = 0;
+	fscanf(file, "%d\t%d\n", &rows1, &cols1);
 
-	int matrix1[rows][cols];
+	int matrix1[rows1][cols1];
 
 	int x;
 	int y;
-	for (y = 0; y < rows; y++) {
-		for (x = 0; x < cols; x++) {
-			if (x != cols - 1) {
+	for (y = 0; y < rows1; y++) {
+		for (x = 0; x < cols1; x++) {
+			if (x != cols1 - 1) {
 				fscanf(file, "%d ", &matrix1[y][x]);
 			} else {
 				fscanf(file, "%d", &matrix1[y][x]);
@@ -38,11 +38,18 @@ int main(int argc, char** args) {
 	}
 	fscanf(file, "\n");
 
-	fscanf(file, "%d\t%d\n", &rows, &cols);
-	int matrix2[rows][cols];
-	for (y = 0; y < rows; y++) {
-		for (x = 0; x < cols; x++) {
-			if (x != cols - 1) {
+	int rows2 = 0;
+	int cols2 = 0;
+	fscanf(file, "%d\t%d\n", &rows2, &cols2);
+
+	if (cols1 != rows2 || rows1 != cols2) {
+		return error();
+	}
+	
+	int matrix2[rows2][cols2];
+	for (y = 0; y < rows2; y++) {
+		for (x = 0; x < cols2; x++) {
+			if (x != cols2 - 1) {
 				fscanf(file, "%d ", &matrix2[y][x]);
 			} else {
 				fscanf(file, "%d", &matrix2[y][x]);
@@ -51,32 +58,24 @@ int main(int argc, char** args) {
 		fscanf(file, "\n");
 	}
 
-	for (y = 0; y < rows; y++) {
-		for (x = 0; x < cols; x++) {
-			printf("%d\t", matrix1[y][x]);
-		}
-		printf("\n");
-	}
-	for (y = 0; y < rows; y++) {
-		for (x = 0; x < cols; x++) {
-			printf("%d\t", matrix2[y][x]);
-		}
-		printf("\n");
-	}
+	int matrix_product[rows1][cols2];
 
-	int matrix_sum[rows][cols];
-
-	for (y = 0; y < rows; y++) {
-		for (x = 0; x < cols; x++) {
-			matrix_sum[y][x] = matrix1[y][x] + matrix2[y][x];
+	int r;
+	int c;
+	int a;
+	for (r = 0; r < rows1; r++) {
+		for (c = 0; c < cols2; c++) {
+			int sum = 0;
+			for (a = 0; a < rows2; a++) {
+				sum += matrix1[r][a]*matrix2[a][c];
+			}
+			matrix_product[r][c] = sum;
 		}
 	}
 
-	printf("\n");
-
-	for (y = 0; y < rows; y++) {
-		for (x = 0; x < cols; x++) {
-			printf("%d\t", matrix_sum[y][x]);
+	for (y = 0; y < rows1; y++) {
+		for (x = 0; x < cols2; x++) {
+			printf("%d\t", matrix_product[y][x]);
 		}
 		printf("\n");
 	}
