@@ -1,4 +1,4 @@
-all: hash_table.c
+all: matrix_addition.c
 	gcc matrix_addition.c -Wall -Werror -o fourth
 
 clean: 
