@@ -38,6 +38,7 @@ int main(int argc, char** args) {
 	}
 	fscanf(file, "\n");
 
+	fscanf(file, "%d\t%d\n", &rows, &cols);
 	int matrix2[rows][cols];
 	for (y = 0; y < rows; y++) {
 		for (x = 0; x < cols; x++) {
@@ -48,6 +49,19 @@ int main(int argc, char** args) {
 			}
 		}
 		fscanf(file, "\n");
+	}
+
+	for (y = 0; y < rows; y++) {
+		for (x = 0; x < cols; x++) {
+			printf("%d\t", matrix1[y][x]);
+		}
+		printf("\n");
+	}
+	for (y = 0; y < rows; y++) {
+		for (x = 0; x < cols; x++) {
+			printf("%d\t", matrix2[y][x]);
+		}
+		printf("\n");
 	}
 
 	int matrix_sum[rows][cols];
