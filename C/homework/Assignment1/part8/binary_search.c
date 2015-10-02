@@ -78,7 +78,7 @@ int error() {
 	return 0;
 }
 
-int main(int argc, char** args) {
+int main(int argn, char** args) {
 	if (argn != 2) {
 		return error();
 	}
@@ -91,22 +91,18 @@ int main(int argc, char** args) {
 
 	char opperation = 0;
 	int value = 0;
-	tree = new_tree_1(10);
+	node* tree = new_tree_1(10);
 	while ( fscanf(file, "%c %d\n", &opperation, &value) == 2) {
-		printf("%c, %d\n", opperation, value);
+		if (opperation == 'i') {
+			printf("inserted %d\n", insert(tree, value) - 1);
+		} else if (opperation == 's') {
+			int level = contains(tree, value) - 1;
+			if (level == 0) {
+				printf("absent\n");
+			} else {
+				printf("present %d\n", level);
+			}
+		}
 	}
-	
-	printf("%d\n", insert(tree, 8));
-	printf("%d\n", insert(tree, 12));
-	printf("%d\n", insert(tree, 9));
-	printf("%d\n", insert(tree, 7));
-	printf("%d\n", insert(tree, 6));
-	printf("%d\n", insert(tree, 5));
-	printf("%d\n", insert(tree, 4));
-	printf("%d\n", insert(tree, 3));
-	printf("%d\n", insert(tree, 2));
-	printf("%d\n", insert(tree, 1));
-	print_tree(tree);
-	printf("%d\n", contains(tree, 1));
 	return 0;
 }
