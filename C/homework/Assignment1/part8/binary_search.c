@@ -72,10 +72,29 @@ void print_tree(node* tree) {
 	printf("\n");
 }
 
-int main(int argc, char** args) {
-	node* tree = NULL;
+int error() {
+	printf("error\n");
+	//Really should return something other than 0, but our autograder can't handle that
+	return 0;
+}
 
+int main(int argc, char** args) {
+	if (argn != 2) {
+		return error();
+	}
+
+	FILE* file = fopen(args[1], "r");
+
+	if (file == NULL) {
+		return error();
+	}
+
+	char opperation = 0;
+	int value = 0;
 	tree = new_tree_1(10);
+	while ( fscanf(file, "%c %d\n", &opperation, &value) == 2) {
+		printf("%c, %d\n", opperation, value);
+	}
 	
 	printf("%d\n", insert(tree, 8));
 	printf("%d\n", insert(tree, 12));
