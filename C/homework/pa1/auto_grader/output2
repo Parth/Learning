@@ -1,0 +1,477 @@
+second  found!
+Grading second
+executing: make clean
+executing: make clean
+executing: make
+executing: make
+gcc linked_list.c -Wall -Werror -o second
+Found a test file test1.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/second/result1.txt.
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test1.txt
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test1.txt
+The output is correct for input file test1.txt.
+
+Found a test file test10.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/second/result10.txt.
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test10.txt
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test10.txt
+The output is correct for input file test10.txt.
+
+Found a test file test2.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/second/result2.txt.
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test2.txt
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test2.txt
+The output is correct for input file test2.txt.
+
+Found a test file test3.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/second/result3.txt.
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test3.txt
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test3.txt
+The output is correct for input file test3.txt.
+
+Found a test file test4.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/second/result4.txt.
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test4.txt
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test4.txt
+The output is not correct for input file test4.txt.
+
+Found a test file test5.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/second/result5.txt.
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test5.txt
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test5.txt
+The output is correct for input file test5.txt.
+
+Found a test file test6.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/second/result6.txt.
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test6.txt
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test6.txt
+The output is correct for input file test6.txt.
+
+Found a test file test7.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/second/result7.txt.
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test7.txt
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test7.txt
+The output is correct for input file test7.txt.
+
+Found a test file test8.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/second/result8.txt.
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test8.txt
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test8.txt
+The output is correct for input file test8.txt.
+
+Found a test file test9.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/second/result9.txt.
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test9.txt
+executing: ./second /home/parthmehrotra/Downloads/auto_grader/testcases/second/test9.txt
+The output is correct for input file test9.txt.
+
+Score is  4.5
+
+
+third  found!
+Grading third
+executing: make clean
+executing: make clean
+executing: make
+executing: make
+gcc hash_table.c -Wall -Werror -o third
+Found a test file test_public1.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/third/result_public1.txt.
+executing: ./third /home/parthmehrotra/Downloads/auto_grader/testcases/third/test_public1.txt
+executing: ./third /home/parthmehrotra/Downloads/auto_grader/testcases/third/test_public1.txt
+The output is correct for input file test_public1.txt.
+
+Found a test file test_public2.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/third/result_public2.txt.
+executing: ./third /home/parthmehrotra/Downloads/auto_grader/testcases/third/test_public2.txt
+executing: ./third /home/parthmehrotra/Downloads/auto_grader/testcases/third/test_public2.txt
+The output is correct for input file test_public2.txt.
+
+Found a test file test_public4.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/third/result_public4.txt.
+executing: ./third /home/parthmehrotra/Downloads/auto_grader/testcases/third/test_public4.txt
+executing: ./third /home/parthmehrotra/Downloads/auto_grader/testcases/third/test_public4.txt
+The output is correct for input file test_public4.txt.
+
+Found a test file test_public5.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/third/result_public5.txt.
+executing: ./third /home/parthmehrotra/Downloads/auto_grader/testcases/third/test_public5.txt
+executing: ./third /home/parthmehrotra/Downloads/auto_grader/testcases/third/test_public5.txt
+An exception occurred while executing third test_public5.txt
+Score is  3.75
+fourth  found!
+Grading fourth
+executing: make clean
+executing: make clean
+executing: make
+executing: make
+gcc matrix_addition.c -Wall -Werror -o fourth
+Found a test file test1.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/result1.txt.
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test1.txt
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test1.txt
+The output is not correct for input file test1.txt.
+
+Found a test file test10.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/result10.txt.
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test10.txt
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test10.txt
+Extra output:  8	8	8	8	9	9	
+The output is not correct for input file test10.txt.
+
+Found a test file test2.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/result2.txt.
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test2.txt
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test2.txt
+Extra output:  8	
+The output is not correct for input file test2.txt.
+
+Found a test file test3.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/result3.txt.
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test3.txt
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test3.txt
+Extra output:  8	8	
+The output is not correct for input file test3.txt.
+
+Found a test file test6.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/result6.txt.
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test6.txt
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test6.txt
+Extra output:  6666	
+The output is not correct for input file test6.txt.
+
+Found a test file test7.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/result7.txt.
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test7.txt
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test7.txt
+Extra output:  55	55	
+The output is not correct for input file test7.txt.
+
+Found a test file test8.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/result8.txt.
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test8.txt
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test8.txt
+Extra output:  8	8	
+The output is not correct for input file test8.txt.
+
+Found a test file test9.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/result9.txt.
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test9.txt
+executing: ./fourth /home/parthmehrotra/Downloads/auto_grader/testcases/fourth/test9.txt
+Extra output:  8	8	8	8	5	5	5	5	
+The output is not correct for input file test9.txt.
+
+Found a test file test9.txt~. but no associated result file.
+Score is  0
+
+
+fifth  found!
+Grading fifth
+executing: make clean
+executing: make clean
+executing: make
+executing: make
+gcc matrix_multiplication.c -Wall -Werror -o fifth
+Found a test file test_public1.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/fifth/result_public1.txt.
+executing: ./fifth /home/parthmehrotra/Downloads/auto_grader/testcases/fifth/test_public1.txt
+executing: ./fifth /home/parthmehrotra/Downloads/auto_grader/testcases/fifth/test_public1.txt
+The output is correct for input file test_public1.txt.
+
+Found a test file test_public2.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/fifth/result_public2.txt.
+executing: ./fifth /home/parthmehrotra/Downloads/auto_grader/testcases/fifth/test_public2.txt
+executing: ./fifth /home/parthmehrotra/Downloads/auto_grader/testcases/fifth/test_public2.txt
+Output missing:  60	60
+
+The output is not correct for input file test_public2.txt.
+
+Found a test file test_public4.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/fifth/result_public4.txt.
+executing: ./fifth /home/parthmehrotra/Downloads/auto_grader/testcases/fifth/test_public4.txt
+executing: ./fifth /home/parthmehrotra/Downloads/auto_grader/testcases/fifth/test_public4.txt
+The output is correct for input file test_public4.txt.
+
+Found a test file test_public5.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/fifth/result_public5.txt.
+executing: ./fifth /home/parthmehrotra/Downloads/auto_grader/testcases/fifth/test_public5.txt
+executing: ./fifth /home/parthmehrotra/Downloads/auto_grader/testcases/fifth/test_public5.txt
+Output missing:  4431	4127	5841	7312
+
+The output is not correct for input file test_public5.txt.
+
+Score is  3.75
+
+
+sixth  found!
+Grading sixth
+executing: make clean
+executing: make clean
+executing: make
+executing: make
+gcc string_operations.c -Wall -Werror -o sixth
+Using test.txt for grading.
+command_str is ./sixth hello world
+executing: ./sixth hello world
+executing: ./sixth hello world
+Your program generated hw. The correct answer is hw.
+The output is correct for input hello world.
+command_str is ./sixth hello rutgers world
+executing: ./sixth hello rutgers world
+executing: ./sixth hello rutgers world
+Your program generated hrw. The correct answer is hrw.
+The output is correct for input hello rutgers world.
+command_str is ./sixth 
+executing: ./sixth 
+executing: ./sixth 
+Your program generated . The correct answer is error.
+command_str is ./sixth one two three four five six seven
+executing: ./sixth one two three four five six seven
+executing: ./sixth one two three four five six seven
+Your program generated ottffss. The correct answer is ottffss.
+The output is correct for input one two three four five six seven.
+command_str is ./sixth a b c d e f g
+executing: ./sixth a b c d e f g
+executing: ./sixth a b c d e f g
+Your program generated abcdefg. The correct answer is abcdefg.
+The output is correct for input a b c d e f g.
+command_str is ./sixth hello World
+executing: ./sixth hello World
+executing: ./sixth hello World
+Your program generated hW. The correct answer is hW.
+The output is correct for input hello World.
+command_str is ./sixth It is Clear And sunny
+executing: ./sixth It is Clear And sunny
+executing: ./sixth It is Clear And sunny
+Your program generated IiCAs. The correct answer is IiCAs.
+The output is correct for input It is Clear And sunny.
+command_str is ./sixth August 23rd, 2014
+executing: ./sixth August 23rd, 2014
+executing: ./sixth August 23rd, 2014
+Your program generated A22. The correct answer is A22.
+The output is correct for input August 23rd, 2014.
+command_str is ./sixth August 23rd ,2014
+executing: ./sixth August 23rd ,2014
+executing: ./sixth August 23rd ,2014
+Your program generated A2,. The correct answer is A2,.
+The output is correct for input August 23rd ,2014.
+command_str is ./sixth August 23rd,2014
+executing: ./sixth August 23rd,2014
+executing: ./sixth August 23rd,2014
+Your program generated A2. The correct answer is A2.
+The output is correct for input August 23rd,2014.
+Score is  2.25
+
+
+seventh  found!
+Grading seventh
+executing: make clean
+executing: make clean
+executing: make
+executing: make
+gcc string_operations2.c -Wall -Werror -o seventh
+Using test.txt for grading.
+command_str is ./seventh Hello World!
+executing: ./seventh Hello World!
+executing: ./seventh Hello World!
+Your program generated o!. The correct answer is o!.
+The output is correct for input Hello World!.
+command_str is ./seventh Welcome to CS211
+executing: ./seventh Welcome to CS211
+executing: ./seventh Welcome to CS211
+Your program generated eo1. The correct answer is eo1.
+The output is correct for input Welcome to CS211.
+command_str is ./seventh Rutgers Scarlet Knights
+executing: ./seventh Rutgers Scarlet Knights
+executing: ./seventh Rutgers Scarlet Knights
+Your program generated sts. The correct answer is sts.
+The output is correct for input Rutgers Scarlet Knights.
+command_str is ./seventh C o m p u t e r
+executing: ./seventh C o m p u t e r
+executing: ./seventh C o m p u t e r
+Your program generated Computer. The correct answer is Computer.
+The output is correct for input C o m p u t e r.
+command_str is ./seventh computer science rutgers
+executing: ./seventh computer science rutgers
+executing: ./seventh computer science rutgers
+Your program generated res. The correct answer is res.
+The output is correct for input computer science rutgers.
+command_str is ./seventh cloud computing
+executing: ./seventh cloud computing
+executing: ./seventh cloud computing
+Your program generated dg. The correct answer is dg.
+The output is correct for input cloud computing.
+command_str is ./seventh internet
+executing: ./seventh internet
+executing: ./seventh internet
+Your program generated t. The correct answer is t.
+The output is correct for input internet.
+command_str is ./seventh how are you
+executing: ./seventh how are you
+executing: ./seventh how are you
+Your program generated weu. The correct answer is weu.
+The output is correct for input how are you.
+command_str is ./seventh football
+executing: ./seventh football
+executing: ./seventh football
+Your program generated l. The correct answer is l.
+The output is correct for input football.
+command_str is ./seventh end
+executing: ./seventh end
+executing: ./seventh end
+Your program generated d. The correct answer is d.
+The output is correct for input end.
+Score is  2.5
+
+
+eighth  found!
+Grading eighth
+executing: make clean
+executing: make clean
+executing: make
+executing: make
+gcc binary_search.c -Wall -Werror -o eighth
+Found a test file test1.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/result1.txt.
+executing: ./eighth /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/test1.txt
+executing: ./eighth /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/test1.txt
+The output is not correct for input file test1.txt.
+
+Found a test file test2.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/result2.txt.
+executing: ./eighth /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/test2.txt
+executing: ./eighth /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/test2.txt
+The output is not correct for input file test2.txt.
+
+Found a test file test3.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/result3.txt.
+executing: ./eighth /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/test3.txt
+executing: ./eighth /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/test3.txt
+The output is not correct for input file test3.txt.
+
+Found a test file test4.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/result4.txt.
+executing: ./eighth /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/test4.txt
+executing: ./eighth /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/test4.txt
+The output is not correct for input file test4.txt.
+
+Found a test file test5.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/result5.txt.
+executing: ./eighth /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/test5.txt
+executing: ./eighth /home/parthmehrotra/Downloads/auto_grader/testcases/eighth/test5.txt
+The output is not correct for input file test5.txt.
+
+Score is  0
+
+
+ninth  found!
+Grading ninth
+executing: make clean
+executing: make clean
+executing: make
+executing: make
+gcc binary_search.c -Wall -Werror -o ninth
+Found a test file test1.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/ninth/result1.txt.
+executing: ./ninth /home/parthmehrotra/Downloads/auto_grader/testcases/ninth/test1.txt
+executing: ./ninth /home/parthmehrotra/Downloads/auto_grader/testcases/ninth/test1.txt
+Output missing:  inserted 4
+
+Output missing:  inserted 5
+
+Output missing:  inserted 6
+
+Output missing:  inserted 7
+
+Output missing:  inserted 6
+
+Output missing:  inserted 7
+
+Output missing:  inserted 8
+
+Output missing:  success
+
+Output missing:  present 3
+
+Output missing:  present 5
+
+Output missing:  present 4
+
+Output missing:  present 6
+
+Output missing:  success
+
+Output missing:  success
+
+Output missing:  fail
+
+Output missing:  success
+
+Output missing:  present 1
+
+Output missing:  present 2
+
+The output is not correct for input file test1.txt.
+
+Found a test file test2.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/ninth/result2.txt.
+executing: ./ninth /home/parthmehrotra/Downloads/auto_grader/testcases/ninth/test2.txt
+executing: ./ninth /home/parthmehrotra/Downloads/auto_grader/testcases/ninth/test2.txt
+Output missing:  success
+
+Output missing:  absent
+
+Output missing:  absent
+
+Output missing:  inserted 1
+
+The output is not correct for input file test2.txt.
+
+Found a test file test3.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/ninth/result3.txt.
+executing: ./ninth /home/parthmehrotra/Downloads/auto_grader/testcases/ninth/test3.txt
+executing: ./ninth /home/parthmehrotra/Downloads/auto_grader/testcases/ninth/test3.txt
+Output missing:  inserted 3
+
+Output missing:  inserted 4
+
+Output missing:  inserted 5
+
+Output missing:  inserted 6
+
+Output missing:  success
+
+Output missing:  present 5
+
+Output missing:  present 1
+
+Output missing:  fail
+
+The output is not correct for input file test3.txt.
+
+Found a test file test4.txt. The output will be compared to /home/parthmehrotra/Downloads/auto_grader/testcases/ninth/result4.txt.
+executing: ./ninth /home/parthmehrotra/Downloads/auto_grader/testcases/ninth/test4.txt
+executing: ./ninth /home/parthmehrotra/Downloads/auto_grader/testcases/ninth/test4.txt
+Output missing:  inserted 3
+
+Output missing:  inserted 2
+
+Output missing:  inserted 3
+
+Output missing:  inserted 3
+
+Output missing:  present 2
+
+Output missing:  inserted 4
+
+Output missing:  inserted 5
+
+Output missing:  inserted 5
+
+Output missing:  inserted 4
+
+Output missing:  inserted 5
+
+Output missing:  inserted 6
+
+Output missing:  inserted 4
+
+Output missing:  fail
+
+Output missing:  success
+
+Output missing:  present 1
+
+Output missing:  success
+
+Output missing:  success
+
+Output missing:  present 2
+
+Output missing:  absent
+
+Output missing:  inserted 4
+
+The output is not correct for input file test4.txt.
+
+Score is  0
+
+
+You scored 
+4.5  in  second
+0  in  fourth
+0  in  third
+2.25  in  sixth
+0  in  ninth
+2.5  in  seventh
+0  in  eighth
+3.75  in  fifth
+2.5  in  first
+Your TOTAL SCORE =  15.5 /50
+Your assignment will be graded for another 50 points with test cases not given to you
