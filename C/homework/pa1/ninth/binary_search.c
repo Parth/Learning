@@ -126,7 +126,7 @@ int error() {
 	return 0;
 }
 
-int main2(int argn, char** args) {
+int main(int argn, char** args) {
 	if (argn != 2) {
 		return error();
 	}
