@@ -130,19 +130,10 @@ int main() {
 	node* tree = new_tree_1(1);
 	printf("i %d\n", insert(tree, 2));
 	printf("i %d\n", insert(tree, 3));
-	printf("i %d\n", insert(tree, 4));
-	printf("i %d\n", insert(tree, 10));
-	printf("i %d\n", insert(tree, 5));
-	printf("i %d\n", insert(tree, 9));
-	printf("i %d\n", insert(tree, 11));
-	printf("i %d\n", insert(tree, 15));
-	printf("i %d\n", insert(tree, 12));
 	print_tree(tree);
 	delete(tree, 3);
 	print_tree(tree);
 	delete(tree, 1);
-	print_tree(tree);
-	printf("s %d\n", contains(tree, 2));
 	print_tree(tree);
 	return 0;
 }
