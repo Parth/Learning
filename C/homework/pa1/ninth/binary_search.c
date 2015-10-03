@@ -26,8 +26,7 @@ int insert(node* tree, int val) {
 		return 1;
 	}
 
-	if (val <= tree -> val) {
-		if (tree -> left != NULL) {
+	if (val <= tree -> val) { if (tree -> left != NULL) {
 			return 1 + insert(tree -> left, val);
 		} else {
 			tree -> left = new_tree_1(val);
@@ -53,17 +52,29 @@ int contains(node* tree, int val) {
 	}
 
 	if (val <= tree -> val) {
-		return 1 + contains(tree -> left, val);
+		int r = contains(tree -> left, val);
+		if (r == 0) {
+			return 0;
+		} else {
+			return 1 + r;
+		}
 	} else {
-		return 1 + contains(tree -> right, val);
+		int r = contains(tree -> right, val);
+		if (r == 0) {
+			return 0;
+		} else {
+			return 1+r;
+		}
 	}
 }
+
 
 node* min(node* tree) {
     node* pointer = tree;
  
-    while (pointer->left != NULL)
+    while (pointer->left != NULL) {
         pointer = pointer->left;
+	}
  
     return pointer;
 }
@@ -115,7 +126,27 @@ int error() {
 	return 0;
 }
 
-int main(int argn, char** args) {
+int main() {
+	node* tree = new_tree_1(1);
+	printf("i %d\n", insert(tree, 2));
+	printf("i %d\n", insert(tree, 3));
+	printf("i %d\n", insert(tree, 4));
+	printf("i %d\n", insert(tree, 10));
+	printf("i %d\n", insert(tree, 5));
+	printf("i %d\n", insert(tree, 9));
+	printf("i %d\n", insert(tree, 11));
+	printf("i %d\n", insert(tree, 15));
+	printf("i %d\n", insert(tree, 12));
+	print_tree(tree);
+	delete(tree, 3);
+	print_tree(tree);
+	delete(tree, 1);
+	print_tree(tree);
+	printf("s %d\n", contains(tree, 2));
+	print_tree(tree);
+	return 0;
+}
+int main2(int argn, char** args) {
 	if (argn != 2) {
 		return error();
 	}
@@ -128,12 +159,29 @@ int main(int argn, char** args) {
 
 	char opperation = 0;
 	int value = 0;
-	node* tree = new_tree_1(10);
-	while ( fscanf(file, "%c %d\n", &opperation, &value) == 2) {
+	node* tree = NULL;
+	while (fscanf(file, "%c %d\n", &opperation, &value) == 2) {
 		if (opperation == 'i') {
-			printf("inserted %d\n", insert(tree, value) - 1);
+			if (tree != NULL) {
+				if (contains(tree, value)) {
+					printf("duplicate\n");
+				} else {
+					printf("inserted %d\n", insert(tree, value));
+				}
+			} else {
+				tree = new_tree_1(value);
+				printf("inserted 1\n");
+			}
+		} else if (opperation == 'd') {
+			if (contains(tree, value) == 0) {
+				printf("fail\n");
+				continue;
+			} else {
+				delete(tree, value);
+				printf("success\n");
+			}
 		} else if (opperation == 's') {
-			int level = contains(tree, value) - 1;
+			int level = contains(tree, value);
 			if (level == 0) {
 				printf("absent\n");
 			} else {
