@@ -37,14 +37,15 @@ master* new_master() {
 }
 
 node* insert_helper(char* word, int level) {
-	char sub_word[level+1];
+
+	node* myNode = (node *) malloc(sizeof(node));
+	myNode -> word = (char *) malloc(sizeof(char)*6);
 	int i;
 	for (i = 0; i < level; i++) {
-		sub_word[i] = word[i];
+		myNode -> word[i] = word[i];
 	}
-	sub_word[level] = '\0';
+	myNode -> word[level] = '\0';
 
-	node* myNode = new_node(sub_word);
 	if (word[level] == '\0') {
 		myNode -> isWord = true;
 		myNode -> rest = NULL;
@@ -106,6 +107,7 @@ void to_string(master* master) {
 }
 
 int main(int argn, char** args) {
-	to_string_helper(insert_helper("Hello", 1), 1);
+	node* n = insert_helper("thank god", 1);
+	to_string_helper(n, 1);
 	return 0;
 }
