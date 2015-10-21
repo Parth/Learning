@@ -37,37 +37,38 @@ master* new_master() {
 }
 
 node* insert_helper(char* word, int level) {
-	int i;
-
 	char sub_word[level+1];
+	int i;
 	for (i = 0; i < level; i++) {
 		sub_word[i] = word[i];
 	}
-	sub_word[level+1] = '\0';
+	sub_word[level] = '\0';
 
-	node* node = new_node(sub_word);
+	node* myNode = new_node(sub_word);
 	if (word[level] == '\0') {
-		node -> isWord = true;
-		node -> rest = NULL;
-		node -> rest_count = 0;
-		return node;
+		myNode -> isWord = true;
+		myNode -> rest = NULL;
+		myNode -> rest_count = 0;
+		return myNode;
 	}	
 
-	node -> rest = (node **) malloc(sizeof(*node)*1);
-	node -> rest[0] = insert_helper(word, level+1);
-	node -> isWord = false;
+	myNode -> rest = (node **) malloc(sizeof(node *));
+	myNode -> isWord = false;
+	myNode -> rest_count = 1;
+	myNode -> rest[0] = insert_helper(word, level+1);
+	return myNode;
 }
 
 void insert(master* root, char* word) {
 	if (root -> nodes_count == 0) {
-		root -> nodes = (node **) malloc(sizeof(*node)*1);
+		root -> nodes = (node **) malloc(sizeof(node *)*1);
 		root -> nodes_count = 1;
 		root -> nodes[0] = insert_helper(word, 1);
 	} else {
 		int i;
 		node* insertion_point = root -> nodes[0];
 		for (i = 0; i < strlen(word); i++) {
-			if (strcmp(word[i], insertion_point -> word[i]) == 0) {
+			if (word[i] == insertion_point -> word[i]) {
 				insertion_point = insertion_point -> rest[0];
 			} else {
 				// Between 1'st node, this sucks, our array now has to expand
@@ -105,6 +106,6 @@ void to_string(master* master) {
 }
 
 int main(int argn, char** args) {
-	master* root = new_master();
+	to_string_helper(insert_helper("Hello", 1), 1);
 	return 0;
 }
