@@ -1,8 +1,11 @@
 package com.parth;
+
+import javax.servlet.annotation.WebServlet;
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 
+@WebServlet("/")
 public class Test extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
