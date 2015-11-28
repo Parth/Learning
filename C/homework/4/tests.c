@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 #include "variable.h"
 
@@ -73,11 +74,30 @@ int test_OR_2() {
 	}
 }
 
+int test_to_string() {
+	puts("\tTesting to_string");
+	var* a = new_var('A', 0);
+	if (strcmp(to_string(a), "A = 0") == 0) {
+		puts("\tPassed");
+		return 0;
+	} else {
+		puts("Failed");
+		return 1;
+	}
+	free(a);
+}
+
+int test_to_number() {
+	
+}
+
 int main() {
 	return 
 		test_constructor()	||
 		test_AND_1()		||
 		test_AND_2()		||
 		test_OR_1()			||
-		test_OR_2();
+		test_OR_2()			||
+		test_get_number()	||
+		test_to_string();
 }
