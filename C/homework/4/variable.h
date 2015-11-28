@@ -7,7 +7,8 @@ struct var {
 };
 typedef struct var var;
 
-int ADD(var* a, var* b);
+var* new_var(char name, int value);
+int AND(var* a, var* b);
 int OR(var* a, var* b);
 char* to_string(var* a);
 

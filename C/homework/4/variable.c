@@ -1,6 +1,14 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 #include "variable.h"
+
+var* new_var(char name, int value) {
+	var* v = (var*) malloc(sizeof(var));
+	v -> name = name;
+	v -> value = value;
+	return v;
+}
 
 int AND(var* a, var* b) {
 	return (a -> value) && (b -> value);
