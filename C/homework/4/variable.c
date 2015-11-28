@@ -22,14 +22,18 @@ int OR(var* a, var* b) {
 void DECODER(int n, var* inputs, var* outputs) {
 }
 
-int get_number(var* inputs, int n) {
+int get_number(var** inputs, int n) {
 	int i;
 	int number = 0;
-	for (i = n; i >= 0; i--) {
+	for (i = 0; i < n; i++) {
 		int factor = (int) pow(2, i);
-		number = number + (factor * inputs[i].value);
+		number = number + (factor * inputs[i] -> value);
 	}
 	return number;
+}
+
+int dec_to_gray(int num) {
+	return (num >> 1) ^ num;
 }
 
 char* to_string(var* a) {
