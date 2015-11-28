@@ -7,5 +7,5 @@
 #define false 0
 
 int main() {
-	to_string(NULL);
+	to_string(NULL, NULL)
 }
