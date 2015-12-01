@@ -49,7 +49,6 @@ int dec_to_grey(int n) {
 }
 
 char* to_string(var* a) {
-	char* str; 
-	asprintf(&str, "%c = %d", a -> name, a -> value);
-	return str;
+	printf("%c = %d", a -> name, a -> value);
+	return "sorry, no asprintf here";
 }

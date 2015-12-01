@@ -207,4 +207,5 @@ int main(int argc, char** args) {
 			output_variables, num_output_variables
 		);
 	}
+	return 0;
 }
