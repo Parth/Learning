@@ -49,12 +49,13 @@ int get_input_variables(char** instructions, int num_instructions, var*** input_
 }
 
 int get_temporary_variables(char** instructions, int num_instructions, var*** temporary_variables) {
-	int i;
+	int is_temp_var['z' - 'a' - 1];
+	int i = 0;
 	int g = 0;
 
-	int is_temp_var['z' - 'a' - 1];
-	for (i = 0; i < 26; i++) {
-		is_temp_var[i] = 0;
+	while (g < 26) {
+		is_temp_var[g] = 0;
+		g++;
 	}
 
 	for (i = 2; i < num_instructions; i++) {
@@ -107,11 +108,11 @@ void execute_program(char** instructions, int n_instructions, var** vars) {
 	char argument[128];
 	for (i = 2; i < n_instructions; i++) {
 		sscanf(instructions[i], "%s %[^\n]\n", instruction, argument);
-		if (strcmp(instruction, "AND")) {
+		if (strcmp(instruction, "AND") == 0) {
 			vars[(int) argument[4]] -> value = AND(vars[(int)argument[0]], vars[(int)argument[2]]);
-		} else if (strcmp(instruction, "OR")) {
+		} else if (strcmp(instruction, "OR") == 0) {
 			vars[(int) argument[4]] -> value = OR(vars[(int) argument[0]], vars[(int) argument[2]]);
-		} else if (strcmp(instruction, "MULTIPLEXER")) {
+		} else if (strcmp(instruction, "MULTIPLEXER") == 0) {
 			int num_inputs = argument[0];
 			int num_selectors = (int) ceil(log2(num_inputs));
 			var* inputs[num_inputs];
@@ -125,7 +126,7 @@ void execute_program(char** instructions, int n_instructions, var** vars) {
 			}
 			var* output = vars[(int) argument[num_inputs*2 + num_selectors*2 + 3]];
 			MULTIPLEXER(num_inputs, inputs, selectors, output);
-		} else if (strcmp(instruction, "DECODER")) {
+		} else if (strcmp(instruction, "DECODER") == 0) {
 			int num_inputs = argument[0];
 			int num_outputs = pow(num_inputs, 2);
 			var* inputs[num_inputs];
@@ -197,8 +198,9 @@ int main(int argc, char** args) {
 	char* string = (char *) malloc(256 * sizeof(char *));
 	while (fscanf(value_file, "%[^\n]\n", string) == 1) {
 		int i;
-		for (i = 0; i < num_output_variables; i++) {
-			input_variables[i] -> value = string[i*2];
+		for (i = 0; i < num_input_variables; i++) {
+			input_variables[i] -> value = string[i*2] - '0';
+			to_string(input_variables[i]);
 		}
 
 		run_program(instructions, lines, 
