@@ -19,4 +19,4 @@ variable.o: variable.c variable.h
 	$(CC) $(CFLAGS) -c variable.c
 
 clean: 
-	rm -rf *.out first
+	rm -rf *.o first

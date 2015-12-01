@@ -47,43 +47,13 @@ int get_input_variables(char** instructions, int num_instructions, var*** input_
 	}
 	return n_input_variables;
 }
-
 int get_temporary_variables(char** instructions, int num_instructions, var*** temporary_variables) {
-	int is_temp_var['z' - 'a' - 1];
-	int i = 0;
-	int g = 0;
-
-	while (g < 26) {
-		is_temp_var[g] = 0;
-		g++;
-	}
-
-	for (i = 2; i < num_instructions; i++) {
-		while (instructions[i][g] != 0) {
-			if (instructions[i][g] >= 'a' && instructions[i][g] <= 'z') {
-				is_temp_var[instructions[i][g] - 'a'] = 1;
-			}
-			g++;
-		}
-		g = 0;
-	}
-
-	int count = 0;
+	temporary_variables[0] = (var **) malloc(26 * sizeof(var *));
+	int i;
 	for (i = 0; i < 26; i++) {
-		if(is_temp_var[i] != 0) {
-			count++;
-		}
+		temporary_variables[0][i] = new_var('a' + i, 0);
 	}
-
-	temporary_variables[0] = (var **) malloc(count * sizeof(var *));
-	g = 0;
-	for (i = 0; i < 26; i++) {
-		if (is_temp_var[i] != 0) {
-			temporary_variables[0][g] = new_var(i + 'a', 0);
-			g++;
-		}
-	}
-	return count;
+	return 26;
 }
 
 int get_output_variables(char** instructions, int num_instructions, var*** output_variables) {
@@ -104,6 +74,10 @@ int get_output_variables(char** instructions, int num_instructions, var*** outpu
 
 void print_output(var** output_variables, int n_outputs) {
 	int i;
+	if (n_outputs == 1) {
+		printf("%d\n", output_variables[0] -> value);
+		return ;
+	}
 	for (i = 0; i < n_outputs; i++) {
 		if (i != n_outputs-1) {
 			printf("%d ", output_variables[i] -> value);
