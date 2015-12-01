@@ -102,6 +102,17 @@ int get_output_variables(char** instructions, int num_instructions, var*** outpu
 	return n_output_variables;
 }
 
+void print_output(var** output_variables, int n_outputs) {
+	int i;
+	for (i = 0; i < n_outputs; i++) {
+		if (i != n_outputs-1) {
+			printf("%d ", output_variables[i] -> value);
+		} else {
+			printf("%d\n", output_variables[i] -> value);
+		}
+	}
+}
+
 void execute_program(char** instructions, int n_instructions, var** vars) {
 	int i;
 	char instruction[16];
@@ -113,7 +124,8 @@ void execute_program(char** instructions, int n_instructions, var** vars) {
 		} else if (strcmp(instruction, "OR") == 0) {
 			vars[(int) argument[4]] -> value = OR(vars[(int) argument[0]], vars[(int) argument[2]]);
 		} else if (strcmp(instruction, "MULTIPLEXER") == 0) {
-			int num_inputs = argument[0];
+			int num_inputs;
+			sscanf(argument, "%d ", &num_inputs);
 			int num_selectors = (int) ceil(log2(num_inputs));
 			var* inputs[num_inputs];
 			var* selectors[num_selectors];
@@ -122,12 +134,13 @@ void execute_program(char** instructions, int n_instructions, var** vars) {
 				inputs[g] = vars[(int) argument[g*2+2]];
 			}
 			for (g = 0; g < num_selectors; g++) {
-				selectors[g] = vars[(int) argument[(2 * num_selectors + 2) + g * 2]];
+				selectors[g] = vars[(int) argument[(2 * num_inputs + 2) + g * 2]];
 			}
-			var* output = vars[(int) argument[num_inputs*2 + num_selectors*2 + 3]];
+			var* output = vars[(int) argument[num_inputs*2 + num_selectors*2 + 2]];
 			MULTIPLEXER(num_inputs, inputs, selectors, output);
 		} else if (strcmp(instruction, "DECODER") == 0) {
-			int num_inputs = argument[0];
+			int num_inputs;
+			sscanf(argument, "%d ", &num_inputs);
 			int num_outputs = pow(num_inputs, 2);
 			var* inputs[num_inputs];
 			var* outputs[num_outputs];
@@ -143,17 +156,6 @@ void execute_program(char** instructions, int n_instructions, var** vars) {
 		}
 	}
 
-}
-
-void print_output(var** output_variables, int n_outputs) {
-	int i;
-	for (i = 0; i < n_outputs; i++) {
-		if (i != n_outputs-1) {
-			printf("%d ", output_variables[i] -> value);
-		} else {
-			printf("%d\n", output_variables[i] -> value);
-		}
-	}
 }
 
 void run_program(char** instructions, int n_instructions, var** input_variables, int n_inputs, var** temp_variables, int n_temps, var** output_variables, int n_outputs) {
@@ -200,9 +202,7 @@ int main(int argc, char** args) {
 		int i;
 		for (i = 0; i < num_input_variables; i++) {
 			input_variables[i] -> value = string[i*2] - '0';
-			to_string(input_variables[i]);
 		}
-
 		run_program(instructions, lines, 
 			input_variables, num_input_variables, 
 			temp_variables, num_temp_variables,
