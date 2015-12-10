@@ -114,7 +114,6 @@ void insert(master* root, char* word) {
 			new[k+1] = insert_helper(word, 1);
 			root -> nodes = new;
 		}
-		//
 		match = false;
 		for (j = 1; j < strlen(word); j++) {
 			for (i = 0; i < insertion_point -> rest_count; i++) {
