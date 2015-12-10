@@ -86,7 +86,9 @@ void increasePref(node* n) {
 
 	int i;
 	for (i = 0; i < 26; i++) {
-		increasePref(n -> children[i]);
+		if (n -> children[i] != NULL) {
+			increasePref(n -> children[i]);
+		}
 	}
 }
 
@@ -117,8 +119,8 @@ void matchStr(char* str) {
 	}
 }
 
+char str[512];
 void readData(FILE* dataFile) {
-	char str[512];
 	int i;
 	for (i = 0; i < 512; i++) {
 		str[i] = '\0';
@@ -132,9 +134,7 @@ void readData(FILE* dataFile) {
 			str[i] = c;
 			i++;
 		} else {
-			for (g = i+1; g < 512; g++) {
-				str[g] = '\0';
-			}
+			str[i+1] = '\0';
 			if (strlen(str) != 0) {
 				matchStr(str);
 			}
@@ -211,21 +211,28 @@ int main(int argc, char** args) {
 	FILE* mappingFile;
 	mappingFile = fopen(args[1], "r");
 	while (fscanf(mappingFile, "%s %s", dictFile, dataFile) > 1) {
+		puts("started");
 		trie = newHead();
 		FILE* dictFileP = fopen(dictFile, "r");
+		puts("starting dict");
 		readDict(dictFileP);
+		puts("dict done");
 		fclose(dictFileP);
 		FILE* dataFileP = fopen(dataFile, "r");
+		puts("starting data");
 		readData(dataFileP);
 		fclose(dataFileP);
+		puts("done data");
 		
 		sprintf(outputFile, "out%d.txt", fileIndex);
 		currentOutput = fopen(outputFile, "w+");
 		printResult();
+		puts("done printing result");
 		fclose(currentOutput);
 		fileIndex++;
 
 		freeTrie();
+		puts("freed trei");
 	}
 	
 	fclose(mappingFile);
