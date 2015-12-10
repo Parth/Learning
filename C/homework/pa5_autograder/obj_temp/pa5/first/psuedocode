@@ -1,0 +1,20 @@
+global_variables:
+	node* trie
+
+main:
+	for line in map:
+		execute(line[0], line[1])
+
+execute(dict, data): 
+	fopen(dict)
+	readDict(dict)
+	close(dict)
+
+	fopen(data)
+	readData(data)
+	close(data)
+
+	printResult()
+
+readDict(dict):
+	

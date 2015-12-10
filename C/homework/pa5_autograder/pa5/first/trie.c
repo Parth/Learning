@@ -13,6 +13,7 @@ node* newHead() {
 	}
 	head -> value = 0;
 	head -> isWord = 0;
+	head -> occs = 0;
 	head -> prefs = 0;
 
 	return head;
@@ -30,6 +31,8 @@ node* newNode(char c, int isWord) {
 	head -> isWord = isWord;
 
 	head -> isWord = 0;
+
+	head -> occs = 0;
 	head -> prefs = 0;
 
 	return head;
