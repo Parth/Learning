@@ -5,6 +5,8 @@ struct node {
 	struct node** children;
 	char value;
 	int isWord;
+	int prefs;
+	int occs;
 };
 typedef struct node node;
 
