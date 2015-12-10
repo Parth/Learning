@@ -48,6 +48,7 @@ char toLower(char A) {
 
 void readDict(FILE* dictFile) {
 	int next = fgetc(dictFile);
+	printf("%c", next);
 	int current = next;
 	node* temp = trie;
 	int i = 0;
