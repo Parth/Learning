@@ -1,22 +1,22 @@
 CC = gcc 
-CFLAGS = -g -Wall -Werror -lm
+CFLAGS = -g -Wall -Werror 
 
-default: circuit
+default: file_stats
 
-circuit: variable.o circuit.o
-	$(CC) $(CFLAGS) -o first variable.o circuit.o
+file_stats: trie.o file_stats.o
+	$(CC) $(CFLAGS) -o first trie.o file_stats.o
 
-tests: variable.o tests.o
-	$(CC) $(CFLAGS) -o test variable.o tests.o
+tests: trie.o tests.o
+	$(CC) $(CFLAGS) -o test trie.o tests.o
 
-circuit.o: circuit.c
-	$(CC) $(CFLAGS) -c circuit.c
+file_stats.o: file_stats.c
+	$(CC) $(CFLAGS) -c file_stats.c
 
 tests.o: tests.c
 	$(CC) $(CFLAGS) -c tests.c
 
-variable.o: variable.c variable.h
-	$(CC) $(CFLAGS) -c variable.c
+trie.o: trie.c trie.h
+	$(CC) $(CFLAGS) -c trie.c
 
 clean: 
 	rm -rf *.o first
