@@ -191,6 +191,7 @@ void freeTrieHelper(node* n) {
 		freeTrieHelper(n -> children[i]);
 	}
 
+	free (n -> children);
 	free(n);
 }
 
@@ -199,6 +200,8 @@ void freeTrie() {
 	for (i = 0; i < 26; i++) {
 		freeTrieHelper(trie -> children[i]);
 	}
+	free(trie -> children);
+	free(trie);
 }
 
 int main(int argc, char** args) {
