@@ -1,0 +1,149 @@
+:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:
+:   Earth's Dreamlands    :  Info on: RPG's,  :(313)558-5024 : area code    :
+:RPGNet World HQ & Archive: Drugs, Industrial :(313)558-5517 : changes to   :
+:  1000's of text files   :  music, Fiction,  :InterNet      : (810) after  :
+:   No Elite / No porn    :   HomeBrew Beer.  :rpgnet@aol.com: Dec 1,1993   :
+:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:.:
+
+	Below you will find the rules that my friends and I have come up 
+with for Battletech.  These rules were meant to augment the existing 
+rules, not replace them.  _The Battletech Compendium_ is the ruleook 
+referenced throughout this text and is considered necessary for these rules 
+to be used fully.
+	One of the basic assumptions throughout this entire text is that 
+the Clans do not exist.  Granted, some of the technology presented in here 
+is Clan in nature or capability, but this system was started before the 
+Clans were presented.  The history of the Battletech Universe has also been 
+ignored completely.  This is evident with the huge variety of weapons and 
+the fact that (for example) LB-X autocannons weigh more than standard 
+autocannons.  For any system that is not specifically modifed or covered in 
+these rules assume that the standard rules for "Inner Sphere" systems take 
+precedence.
+	The 2x engine rules were created some time ago, exact date 
+forgotten.  These rules are of my design and should be considered 
+copyrighted.  The Observer rules were created based upon ideas found in the 
+Rec.Games.Mecha archives.  Credit is given at the end.
+	The Internal Structure and Armor rules were developed recently and 
+are pretty much an adjustment to existing rules plus added systems.  If 
+anything appears to have come from FASA then it probably did.
+	The Weapons list is a compilation of the existing weapons plus 
+those developed by myself, my friends, and others.  The alternate 
+ammunitions were an outgrowth of rules presented in the FASA product 
+_Unbound_ and material found in the aforementioned archives.  
+	The Infantry Rules were developed to make all types of infantry a 
+viable selection.  These rules were also intened to make them a little more 
+capable of playing a role on the battlefield.
+	The Credit Section is where I give credit to those who inspired me 
+to put something resembling their work into my compilation.  I tried to 
+give credit where it is due, but if you feel slighted I apologize.  One 
+source of inspiration and information tht is not credited there is FASA.  
+They deserve the credit for anything that resembles material from the 
+rulebook and the product _Unbound_.
+	If you have any questions, comments, or suggestions feel free to 
+send Email to MURRAYMD@UDAVXB.OCA.UDAYTON.EDU or 
+	Matt Murray
+	144 Medford Apt E
+	Dayton OH 45410
+
+				ENJOY!!!
+
+
+	T W O    E N G I N E    A N D    T W O    C O C K P I T    
+	
+	The 2xeng and 2xeng2xcockpit mech rules will require that you make 
+new mech sheets for these monsters.  With a little bit of work, clear tape, 
+and photocopies you can cut up, you can make the sheets no problem.  I'll 
+give you what location has how many crits of each thing.
+
+	2 ENGINE MECHS
+
+	The two engine mech is simply a battlemech that has such a high 
+speed that the weight or power requirements are so high that two engines 
+are requird as opposed to one.  For a mech to have two engines, it must 
+pass one of two requirements.  If it doesn't, then the mech will simply use 
+one engine.  NOTE: The weight requirements below are based upon standard 
+engine weights and are regardless of the possibility of the engines being 
+ST or XL engines. 
+
+	For the design of your mech, replace the rules for "Determine 
+engine weight" with this list:
+
+	1) Detremine the speed of the mech
+	2) Determine the Engine rating
+	3) Determine the Engine weight
+	4) Check to see if steps 2 or 3 qualify the mech for 2x engine 
+	   status.  If the mech does qualify, follow ths steps:
+		A) If the last digit of the Engine rating is a 5, add 5 to 
+		   the engine rating making it an even number.
+		B) Divide the engine rating by 2 creating the engine 
+		   ratings of the 2 smaller engines to be used.
+		C) Use the smaller engine ratings to determine the engine 
+		   weights of the two smaller engines.  
+		D) Modify the weights of the engines appropriately if you 
+		   are going to use ST or XL engines.
+		E) Add the weights of the engines together to determine the 
+		   final weight of th engines. 
+	(Note: Gyro weight is based upon the engine rating from line 4A.)
+		  
+REQUIREMENTS:
+
+If the mech is 55-100 tons, then the requirements are:
+
+	1) The required engine rating is above 400
+
+			or
+
+	2) The weight of the engine required is 75% or greater than the 
+	   weight of the mech.
+
+If the mech is 5-50 tons, then the requirements are:
+
+	1) The required engine rating is above 400
+
+			or
+
+	2) The weight of the engine required is 50% or greater than the
+	   weight of the mech.
+
+	Now that the rules for what mechs are allowed to have 2 engines 
+have been established, next are the special rules pertaining to them.
+
+	1) Since the mech has 2 fusion engines, it also has 20 heat sinks.
+		A) They can be made double heat sinks.
+		B) The number of HS that can be put on to an engine w/out 
+		   being represented on the critical hit table is based 
+		   upon the engine rating of each engine, not the combined 
+		   engine ratings. 
+		C) If the engine heat sinks are double HS, then divide the 
+		   number of heat sinks that can be put on an engine by the 
+		   number of crits each double heat sink takes up. (This 
+		   rule is put in so that double heat sinks are not common 
+		   and do not unbalance the game since heat is the 
+		   restraining factor in this game.  This rule is also 
+		   under the assumption that the rules concerning mixing 
+		   standard and double heat sinks are changed.  If you want 
+		   to, you can mount double and standard HS on a mech.  All 
+		   of the heat sinks from the engines must be the same 
+		   type.  All 20 must be either double or standard, not 
+		   half&half.  If you keep the original rule saying ALL 
+		   heat sinks must be the same type, then you may also 
+		   consider possibly ignore this subrule completely.
+	2) A damage track is kept for each engine.  It is possible for a 2x 
+	   engine mech to recieve 4 engine hits, 2 per engine.  When one of 
+	   the two engines receives 3 hits, it is destroyed and the move 
+	   rate of the mech is halved, rounding down.  The destroyed engine 
+	   also stops producing heat due to damage or moving.  A 2x engine 
+	   mech is considered destroyed when both engines are destroyed, 
+	   i.e.: When each engine has received 3 engine hits.  Any HS 
+	   mounted on the engine and not represented on the crit. hit table 
+	   for the mech are also destroyed. 
+	3) When the internal structure for a side torso has been completely 
+	   destroyed, that sides engine is also counted as destroyed with the 
+	   appropriate effects for losing one engine as outlined in rule 2.
+	4) The Critical Hit table for a 2x engined mech is different from 
+	   that you would find on a standard one.
+		A) Change the center torso by changing all engine slots 
+		   (11,12,13,22,23,24) into empty slots that can mount
+		   equipment.
+		B) Change both of the side torsos to this slot 
+		   configuration:

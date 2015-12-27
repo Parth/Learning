@@ -1,0 +1,5 @@
+INPUTVAR 3 A B C
+OUTPUTVAR 1 Q
+AND A B w
+AND A C x
+OR w x Q
