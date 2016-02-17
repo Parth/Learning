@@ -1,0 +1,249 @@
+\documentclass{article}
+\begin{document}
+
+\centerline{\sc \large Homework 2}
+\vspace{0.5pc}
+
+\centerline{Parth Mehrotra}
+\centerline{160005277 - pm619}
+\vspace{2pc}
+
+
+10a.
+
+$$[\lnot p \land (p \lor q)] \rightarrow q$$
+
+\begin{tabular}{c|c|c|c|c|c}
+$p$ & $q$ & $\lnot p$ & $p \lor q$ & $\lnot p \land (p \lor q)$  & $\lnot p \land (p \lor q) \rightarrow q$ \\
+\hline
+0 & 0 & 1	     & 0			& 0							  & 1                                        \\
+0 & 1 & 1	     & 1 			& 1							  & 1                                        \\
+1 & 0 & 0	     & 1 			& 0							  & 1                                        \\
+1 & 1 & 0	     & 1 			& 0							  & 1                                        \\
+\end{tabular}
+
+
+10b.
+
+$$[(p \rightarrow q) \land (q \rightarrow r)] \rightarrow (p \rightarrow r)$$
+
+\begin{tabular}{c|c|c|c|c|c|c|c}
+$p$ & $q$ & $r$ & $p \rightarrow q$ & $q \rightarrow r$ & $(p \rightarrow q) \land (q \rightarrow r)$ & $(p \rightarrow r)$ & $[(p \rightarrow q) \land (q \rightarrow r)] \rightarrow (p \rightarrow r)]$ \\
+\hline
+0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 \\
+0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 \\
+0 & 1 & 0 & 1 & 0 & 0 & 1 & 1 \\
+0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+1 & 0 & 0 & 0 & 1 & 0 & 0 & 1 \\
+1 & 0 & 1 & 0 & 1 & 0 & 1 & 1 \\
+1 & 1 & 0 & 1 & 0 & 0 & 0 & 1 \\ 
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+
+\end{tabular}
+
+
+10c.
+$$[p \land (p \rightarrow q)] \rightarrow q$$
+
+\begin{tabular}{c|c|c|c|c}
+$p$ & $q$ & $p \rightarrow q$ & $p \land (p \rightarrow q)$ & $[p \land (p \rightarrow q)] \rightarrow q$ \\
+\hline
+0 & 0 & 1 & 0 & 1 \\
+0 & 1 & 1 & 0 & 1 \\
+1 & 0 & 0 & 0 & 1 \\
+1 & 1 & 1 & 1 & 1 \\
+\end{tabular}
+
+10d.
+$$[(p \land q) \land (p \rightarrow r) \land (q \rightarrow r)] \rightarrow r$$
+
+\begin{tabular}{c|c|c|c|c|c|c|c}
+$p$ &
+$q$ &
+$r$ &
+$p \land q$ &
+$p \rightarrow r$ &
+$q \rightarrow r$ &
+$(p \land q) \land (p \rightarrow r) \land (q \rightarrow r)$ &
+$[(p \land q) \land (p \rightarrow r) \land (q \rightarrow r)] \rightarrow r$ \\
+\hline
+0 & 0 & 0 & 0 & 1 & 1 & 0 & 1\\
+0 & 0 & 1 & 0 & 1 & 1 & 0 & 1\\
+0 & 1 & 0 & 0 & 1 & 0 & 0 & 1\\
+0 & 1 & 1 & 0 & 1 & 1 & 0 & 1\\
+1 & 0 & 0 & 0 & 0 & 1 & 0 & 1\\
+1 & 0 & 1 & 0 & 1 & 1 & 0 & 1\\
+1 & 1 & 0 & 1 & 0 & 0 & 0 & 1\\
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+\end{tabular}
+
+14
+$$(\lnot p \land (p \rightarrow q)) \rightarrow \lnot q$$
+
+\begin{tabular}{c|c|c|c|c|c}
+$p$ &
+$q$ &
+$\lnot p$ &
+$p \rightarrow q$ &
+$\lnot p \land (p \rightarrow q)$ &
+$(\lnot p \land (p \rightarrow q)) \rightarrow \lnot q$ \\
+\hline
+0 & 0 & 1 & 1 & 1 & 1 \\
+0 & 1 & 1 & 1 & 1 & 1 \\
+1 & 0 & 0 & 0 & 0 & 1 \\
+1 & 1 & 0 & 1 & 0 & 1 \\
+\end{tabular}
+
+16
+Is $p \leftrightarrow q \equiv (p \land q) \lor (\lnot p \land \lnot q)$?
+
+\begin{tabular}{c|c|c|c|c|c}
+$p$ &
+$q$ &
+$p \land q$ & 
+$\lnot p \land \lnot q$ &
+$(p \land q) \lor (\lnot p \land \lnot q)$ &
+$p \leftrightarrow q$ \\
+\hline
+0 & 0 & 0 & 1 & 1 & 1 \\
+0 & 1 & 0 & 0 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 & 0 \\
+1 & 1 & 1 & 0 & 1 & 1 \\
+\end{tabular}
+
+yes
+
+18
+Is $p \rightarrow q \equiv \lnot q \rightarrow p$?
+
+\begin{tabular}{c|c|c|c}
+$p$ &
+$q$ &
+$p \rightarrow q$ &
+$\lnot q \rightarrow \lnot p$ \\
+\hline
+0 & 0 & 1 & 1 \\
+0 & 1 & 1 & 1 \\
+1 & 0 & 0 & 0 \\
+1 & 1 & 1 & 1 \\
+\end{tabular}
+yes
+
+20
+
+\begin{tabular}{c|c|c|c|c}
+$p$ &
+$q$ &
+$p \leftrightarrow q$ &
+$q \oplus p$ &
+$\lnot(q \oplus p)$ \\
+\hline
+0 & 0 & 1 & 1 & 1 \\
+0 & 1 & 0 & 0 & 0 \\
+1 & 0 & 0 & 0 & 0 \\
+1 & 1 & 1 & 1 & 1 \\
+\end{tabular}
+
+62a. Yes, $p = T, q = F$
+
+62b. Yes, $p = F, q = T, r = F$
+
+62c. Yes, $p = T, q = T, r = F, s = T$
+
+4a. 0
+
+4b. 1
+
+4c. 1
+
+12a. True
+
+12b. True
+
+12c. False
+
+12d. True
+
+12e. Flase
+
+12f. True
+
+12g. False
+
+14a. True
+
+14b. True
+
+14c. True
+
+14d. False
+
+20a. $P(-5) \lor P(-3) \lor \dots \lor P(5)$
+
+20b. $P(-5) \land P(-3) \land \dots \land P(5)$
+
+20c. $(x = 1) \lor (x \neq 1 \land \lnot P(x))$
+
+20d. $(x \geq 0) \land (P(1) \lor P(3) \lor P(5))$
+
+36a. x = 1
+
+36b. x = 2
+
+36c. x = 0
+
+26a. False
+
+26b. True
+
+26c. False
+
+26d. False
+
+26e. True
+
+26f. True
+
+26g. True 
+
+26h. False
+
+26i. False
+
+28a. True
+
+28b. True
+
+28c. True
+
+28d. False
+
+28e. True
+
+28f. True
+
+28g. True
+
+28h. 
+$$x + 2y = 2$$
+$$x = 2 - 2y$$
+$$2x + 4y = 5$$
+$$2(2-2y) + 4y = 5$$
+$$4 - 4y + 4y  = 5$$
+$$0 = 5$$
+False
+
+28i.
+$$x+y = 2$$
+$$x = 2 - y$$
+
+$$2(2-y) - y = 1$$
+$$4 - y = 1$$
+$$y = 3$$
+
+False, $x=0$, $y=3$ does not work.
+
+28j.
+True
+
+\end{document}
