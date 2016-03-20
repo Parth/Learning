@@ -1,0 +1,452 @@
+%\documentclass{article}
+\documentclass[journal]{IEEEtran}
+\usepackage{amsmath}
+
+\begin{document}
+	\title{Linear Algebra Homework 3}
+	\author{Parth Mehrotra}
+	\maketitle
+
+	\textbf{\begin{itemize}
+		\item{Section 2.6: 1, 9}
+		\item{Section 3.1: 14, 21, 23}
+		\item{Section 3.2: 5, 21, 33, 63}
+	\end{itemize}}
+
+	\vspace{25pt}
+	
+	\setlength{\parindent}{0cm} {
+		\section*{\Large{\textbf{2.6.1}}}
+			Find the LU-Decomposition of:
+
+			\[ 
+				\left( 
+					\begin{array}{ccc}
+						2&	3&	4 \\
+						6&	8&	10 \\
+						-2&	-4&	-3 \\
+					\end{array} 
+				\right)
+			\] 
+
+			First, let's find $U$, the upper triangular matrix.
+			\[
+				-3R_1 + R_2 \rightarrow R_2
+			\]
+			\[
+				R_1 + R_3 \rightarrow R_3
+			\]
+			\[ 
+				\left( 
+					\begin{array}{ccc}
+						2&	3&	4 \\
+						0&	-1&	-12 \\
+						0&	-1&	1 \\
+					\end{array} 
+				\right)
+			\] 
+			\[
+				-R_2 + R_3 \rightarrow R_3
+			\]
+			\[ 
+				U = \left( 
+					\begin{array}{ccc}
+						2&	3&	4 \\
+						0&	-1&	-12 \\
+						0&	0&	13 \\
+					\end{array} 
+				\right)
+			\] 
+
+			Now let's use the inverse of these row operations to find $L$, the lower triangular matrix.
+
+			\[
+				I_3 = \left(
+					\begin{array}{ccc}
+						1&	0& 0	\\
+						0&	1& 0	\\
+						0&	0& 1	\\
+					\end{array}
+				\right)
+			\]
+			\[
+				R_2 + R_3 \rightarrow R_3
+			\]
+			\[
+				\left(
+					\begin{array}{ccc}
+						1&	0& 0	\\
+						0&	1& 0	\\
+						0&	1& 1	\\
+					\end{array}
+				\right)
+			\]
+			\[
+			-R_1 + R_3 \rightarrow R_3
+			\]
+			\[
+				\left(
+					\begin{array}{ccc}
+						1&	0& 0	\\
+						0&	1& 0	\\
+						-1&	1& 1	\\
+					\end{array}
+				\right)
+			\]
+			\[
+			3R_1+R_2 \rightarrow R_2
+			\]
+			\[
+				L = \left(
+					\begin{array}{ccc}
+						1&	0& 0	\\
+						3&	1& 0	\\
+						-1&	1& 1	\\
+					\end{array}
+				\right)
+			\]
+		\newpage
+		\section*{\Large{\textbf{2.6.9}}}
+			Solve the following system of linear equations:
+			\[2x_1 + 3x_2 + 4x_3 = 1\]
+			\[6x_1 + 8x_2 + 10x_3 = 4\]
+			\[-2x_1 + -4x_2 + -3x_3 = 0\]
+
+			From the last problem, we know that:
+			\[
+				L = \left(
+					\begin{array}{ccc}
+						1&	0& 0	\\
+						3&	1& 0	\\
+						-1&	1& 1	\\
+					\end{array}
+				\right)
+			\]
+			\[
+				U = \left( 
+					\begin{array}{ccc}
+						2&	3&	4 \\
+						0&	-1&	-12 \\
+						0&	0&	13 \\
+					\end{array} 
+				\right)
+			\]
+			\[Ly=b\]
+
+			\[y_1=1\]
+
+			\[3y_1 + y_2 = 4\]
+			\[3(1) + y_2 = 4\]
+			\[y_2 = 1\]
+
+			\[-x_1 + x_2 + x_3 = 0\]
+			\[-(1) + (1) + x_3 = 0\]
+			\[x_3 = 0\]
+
+			\[Ux = y\]
+
+			\[2x_1 + 3x_2 + 4x_3 = 1\]
+			\[-x_2 -12x_3 = 1\]
+			\[13x_3 = 0\]
+
+			\[x_1 = 2\]
+			\[x_2 = -1\]
+			\[x_3 = 0\]
+
+		\newpage
+		\section*{\Large{\textbf{3.1.14}}}
+			\[
+				\begin{vmatrix}
+					1&	-2& 2	\\
+					2&	-1& 3	\\
+					0&	1&  -1	\\
+				\end{vmatrix}
+			\]
+			\[
+				=1\begin{vmatrix}
+					-1& 3	\\
+					1&  -1	\\
+				\end{vmatrix}-(-2)
+				\begin{vmatrix}
+					2&	3	\\
+					0&	-1	\\
+				\end{vmatrix}+
+				\begin{vmatrix}
+					2&	-1	\\
+					0&	1	\\
+				\end{vmatrix}
+			\]
+			\[
+				1(1-3)+2(-2-0)+2(2-0)
+			\]
+			\[
+				=3
+			\]
+		\section*{\Large{\textbf{3.1.21}}}
+			\[
+				\begin{vmatrix}
+					4&	-1&	2 \\
+					0&	3&	7 \\
+					0&	0&	5 \\
+				\end{vmatrix}
+			\]
+
+			The determinant of a triangular matrix is the product of it's determinant.
+
+			\[
+				4*3*5 = 60
+			\]
+
+		\section*{\Large{\textbf{3.1.23}}}
+			\[
+				\begin{vmatrix}
+					-6&	0&	0 \\
+					7&	-3&	2 \\
+					2&	9&	4 \\
+				\end{vmatrix}
+			\]
+			\[\frac{-1}{2}R_3+ R_2 \rightarrow R_2\]
+
+			\[
+				\begin{vmatrix}
+					-6&	0&	0 \\
+					6&	\frac{-15}{2}&	0 \\
+					2&	9&	4 \\
+				\end{vmatrix}
+			\]
+
+			This row operation does not have any affect on the resulting determinant. Since we have formed a triangular matrix, the resulting determinant is the product of the diagonal.
+
+			\[
+				-6*\frac{-15}{2}*4=180
+			\]
+		\section*{\Large{\textbf{3.2.5}}}
+			Evaluate the following expression by performing cofactor expansion on the third row.
+			\[
+				\begin{vmatrix}
+					1&	3&	2 \\
+					2&	2&	3 \\
+					3&	1&	1 \\
+				\end{vmatrix}
+			\]
+			\[
+				3\begin{vmatrix}
+					3&	2 \\
+					2&	3 \\
+				\end{vmatrix}
+				-1\begin{vmatrix}
+					1&	2\\
+					2&	3\\
+				\end{vmatrix}
+				+1\begin{vmatrix}
+					1&	3\\
+					2&	2\\
+				\end{vmatrix}
+			\]
+			\[
+				3(9-4)-1(3-2)+1(2-6)
+			\]
+			\[
+				15-1-4=10
+			\]
+		\newpage
+		\section*{\Large{\textbf{3.2.21}}}
+			Find  the determinant by only using elementary row operations.
+			\[
+				\begin{vmatrix}
+					1&	-1&	2&	1 \\
+					2&	-1&	-1&	4 \\
+					-4&	5&	-10&	-6 \\
+					3&	-2&	10&	-1 \\
+				\end{vmatrix}
+			\]
+			\[
+				-2R_1+R_2 \rightarrow R_2
+			\]
+			\[
+				4R_1+R_3 \rightarrow R_3
+			\]
+			\[
+				-3R_1+R_4 \rightarrow R_4
+			\]
+			\[
+				\begin{vmatrix}
+					1&	-1&	2&	1 \\
+					0&	1&	-5&	2 \\
+					0&	1&	7&	-2 \\
+					0&	1&	4&	-4 \\
+				\end{vmatrix}
+			\]
+			\[
+				-R_2+R_3 \rightarrow R_3
+			\]
+			\[
+				-R_2+R_4 \rightarrow R_4
+			\]
+			\[
+				\begin{vmatrix}
+					1&	-1&	2&	1 \\
+					0&	1&	-5&	2 \\
+					0&	0&	12&	-4 \\
+					0&	0&	9&	-8 \\
+				\end{vmatrix}
+			\]
+			\[
+				\frac{1}{4}R_3 \rightarrow R_3
+			\]
+			\[
+				\begin{vmatrix}
+					1&	-1&	2&	1 \\
+					0&	1&	-5&	2 \\
+					0&	0&	3&	-1 \\
+					0&	0&	9&	-8 \\
+				\end{vmatrix}
+			\]
+			\[
+				-3R_3 + R_4 \rightarrow R_4
+			\]
+			\[
+				\begin{vmatrix}
+					1&	-1&	2&	1 \\
+					0&	1&	-5&	2 \\
+					0&	0&	3&	-1 \\
+					0&	0&	0&	-5 \\
+				\end{vmatrix}
+			\]
+			The determinant of a triangular matrix is the product of it's diagonal. In this case, to arrive at the triangular form, we multiplied one of the rows by a scalar, so we have to multiply the determinant by that same scalar.
+
+			\[
+				det(A) = 1*1*3*-5*(\frac{1}{4}) = \frac{-15}{4}
+			\]
+		\newpage
+		\section*{\Large{\textbf{3.2.33}}}
+			What value of $c$ will make the following matrix not-invertible?
+			\[
+				\begin{bmatrix}
+					1&	2&	-1	\\
+					2&	3&	c	\\
+					0&	c&	-15	\\
+				\end{bmatrix}
+			\]
+
+			Can be restated as, "For what value of $c$ is the following matrix's determinant $0$?"
+			\[
+				\begin{vmatrix}
+					1&	2&	-1	\\
+					2&	3&	c	\\
+					0&	c&	-15	\\
+				\end{vmatrix} = 0
+			\]
+			\[
+				-2R_1+R_2 \rightarrow R_2
+			\]
+			\[
+				\begin{vmatrix}
+					1&	2&	-1	\\
+					0&	-1&	2+c	\\
+					0&	c&	-15	\\
+				\end{vmatrix} = 0
+			\]
+			A linearly dependent set of vectors, will have a determinant that is $0$. So, we want $R_2$ and $R_3$ to be linear combinations of one another.
+			\[
+				\frac{-1}{2+c} = \frac{c}{-15}
+			\]
+			\[ c(2+c) = 15 \]
+			\[ c^2 + 2c - 15 = 0 \]
+			\[ (c+5)(c-3) = 0\]
+			\[ c = -5\ or\ c = 3 \]
+		\section*{\Large{\textbf{3.2.63}}}
+			Solve each system using Cramer's rule.
+			\[x_1-2x_3=6\]
+			\[\-x_1+x_2+3x_3=-5\]
+			\[2x_2+x_3=4\]
+
+			\[
+				D = \begin{vmatrix}
+					1&	0&	-2	\\
+					1&	2&	3	\\
+					0&	2&	1	\\
+				\end{vmatrix}
+			\]
+			\[ -R_1 + R_2 \rightarrow R_2 \]
+			\[
+				\begin{vmatrix}
+					1&	0&	-2	\\
+					0&	2&	5	\\
+					0&	2&	1	\\
+				\end{vmatrix}
+			\]
+			\[ -R_2 + R_3 \rightarrow R_3 \]
+			\[
+				\begin{vmatrix}
+					1&	0&	-2	\\
+					0&	2&	5	\\
+					0&	0&	-4	\\
+				\end{vmatrix}
+			\]
+			\[ D = 1*2*-4 = -8 \] 
+			\[
+				D_{x_{1}}=\begin{vmatrix}
+					6&	0&	-2	\\
+					-5&	2&	3	\\
+					4&	2&	1	\\
+				\end{vmatrix}
+			\]
+			\[
+				= 6\begin{vmatrix}
+					2&	3	\\
+					2&	1	\\
+				\end{vmatrix}
+				-2\begin{vmatrix}
+					-5&	2	\\
+					4&	2	\\
+				\end{vmatrix}
+			\]
+			\[=6(2-6)-2(10-8)=-24-4\]
+			\[D_{x_1}=-28\]
+			\[
+				D_{x_2} = \begin{vmatrix}
+					1&	6&	-2	\\
+					1&	-5&	3	\\
+					0&	4&	-4	\\
+				\end{vmatrix}
+			\]
+			\[=
+				1\begin{vmatrix}
+					-5&	3\\
+					4&	-4\\
+				\end{vmatrix}
+				-6\begin{vmatrix}
+					1&	3	\\
+					0&	-4	\\
+				\end{vmatrix}
+				-2\begin{vmatrix}
+					1&	-5	\\
+					0&	4	\\
+				\end{vmatrix}
+			\]
+			\[D_{x_2}=1(20-12)-6(-4)-2(4)=2+24-8=18\]
+			\[
+				D_{x_3} = \begin{vmatrix}
+					1&	0&	6	\\
+					1&	2&	-5	\\
+					0&	2&	4	\\
+				\end{vmatrix}
+			\]
+			\[
+				= 1\begin{vmatrix}
+					2&	-5	\\
+					2&	4	\\
+				\end{vmatrix}
+				6\begin{vmatrix}
+					1&	2	\\
+					0&	2	\\
+				\end{vmatrix}
+			\]
+			\[D_{x_3} = 1(8+10)+6(1) = 18+6 = 24\]
+			\[x_1 = \frac{D_{x_1}}{D}=\frac{-28}{-8}=\frac{7}{2}\]
+			\[x_2 = \frac{D_{x_2}}{D}=\frac{18}{-8}=\frac{-9}{4}\]
+			\[x_3 = \frac{D_{x_3}}{D}=\frac{24}{-8}=-3\]
+	}
+
+\end{document}
