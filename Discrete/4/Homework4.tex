@@ -1,0 +1,183 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+	\title{Discrete I Homework 4}
+	\author{Parth Mehrotra}
+	\maketitle
+
+	\textbf{\begin{itemize}
+		\item{Section 2.1: 6, 10, 18, 22, 26, 32, 38}
+		\item{Section 2.2: 4, 6, 16, 20}
+		\item{Section 2.5: 2, 4, 6, 28}
+	\end{itemize}}
+
+	\vspace{25pt}
+	
+	\setlength{\parindent}{0cm} {
+		\section*{\Large{\textbf{2.1.6}}}
+			\[ A = \{2,4,6\} \]
+			\[ B = \{2,6\} \]
+			\[ C = \{4,6\} \]
+			\[ D = \{4, 6, 8\} \]
+
+			$B$ is a subset of $A$, $C$ is a subset of $D$.
+
+		\section* {\Large{\textbf{2.1.10}}}
+			A: True
+
+			B: True
+
+			C: False
+
+			D: True
+
+			E: True 
+
+			F: True
+
+			G: True
+
+		\section* {\Large{\textbf{2.1.18}}}
+			\[ A = \{ 1, 2, 3 \} \]
+			\[ B = \{ \{ 1, 2, 3\}, 1, 2, 3 \} \]
+
+		\section* {\Large{\textbf{2.1.22}}}
+			Yes
+
+		\section* {\Large{\textbf{2.1.26}}}
+			if $ A \subseteq C $, $B \subseteq D$ then $A \times B \subseteq C \times D$
+			
+
+			Take an arbitary element from $A$, and $B$. By definition, these elements will be subsets of $C$ and $D$ respectively. The pair will be a member of $A \times B$ and $C \times D$. Since this holds true for every element, we can conclude that:
+
+
+			if $ A \subseteq C $, $B \subseteq D$ then $A \times B \subseteq C \times D$
+
+		\section* {\Large{\textbf{2.1.32}}}
+			\subsection* {a}
+				\[ \{(a, x, 0), (a, b, 1), (a, y, 0), (a, y, 1), (b, x, 0), (b, x, 1), (b, y, 0), (b, y, 1), (c, x, 0), (c, x, 1), (c, y, 0), (c, y, 1)\} \]
+			\subsection* {b}
+				\[ \{(0, x, a), (0, x, b), (0, x, c), (0, y, a), (0, y, b), (0, y, c), (1, x, a), (1, x, b), (1, x, c), (1, y, a), (1, y, b), (1, y, c)\} \]
+			\subsection* {c}
+				\[ \{(0, a, x), (0, a, y), (0, b, x), (0, b, y), (0, c, x), (0, c, y), (1, a, x), (1, a, y), (1, b, x), (1, b, y), (1, c, x), (1, c, y)\} \]
+			\subsection* {d}
+				\[ \{(x, x, x), (x, x, y), (x, y, x), (x, y, y), (y, x, x), (y, x, y), (y, y, y)\} \]
+
+		\section* {\Large{\textbf{2.1.38}}}
+			If set A and B are not the same, you can go to the first non-equal entry. $ A \times B \neq B \times A$ at this point.
+
+		\section* {\Large{\textbf{2.2.4}}}
+			\subsection* {a}
+				\[ \{a, b, c, d, e, f, g, h \} \]
+			\subsection* {b}
+				\[ \{a, b, c, d, e \} \]
+			\subsection* {c}
+				\[ \{\} \]
+			\subsection* {d}
+				\[ \{f, g, h\} \]
+
+		\section* {\Large{\textbf{2.2.6}}}
+			\subsection* {a}
+				The null set is a set that contains no elements. If you take $A$, and add "no" elements to it, set a will remain unchanged. Therefore, $A \bigcup \{\} = A$
+			\subsection* {b}
+				$A \bigcap A = A$ The intersection opperator shows us what elements two sets have in common. If both sides of the intersection are equal, the operator will return one of the sides of the operator. 
+
+		\section* {\Large{\textbf{2.2.16}}}
+			\subsection* {a}
+				By the definition of $\bigcap$ members of $A$, will be in $A \bigcap B$.
+			\subsection* {b}
+				As long as $B$ isn't the null set, $A \bigcup B$ Will contain all the members of $A$.
+			\subsection* {c}
+				Unless $A=B$ when you take away all the elements from $A$ that are in $B$, $A - B$ will be a subset of $A$.
+
+			\subsection* {d}
+				If you take a set $B$ and you remove all the elements $A$ and $B$ have in common. Then the intersection of $A$ and $B$ will return $\{\}$.
+			\subsection* {e}
+				If you remove all the elements from a set, and union that same set, the "remove" opperation had no effect.
+
+		\section* {\Large{\textbf{2.2.20}}}
+			\subsection* {a}
+				If $A$ is the $\{\}$, then $A$ unioned with anything, will be that set.
+			\subsection* {b}
+				If $A$ is a proper subset of $B$, then the only elements they have in common, will be the members of $A$.
+		\section* {\Large{\textbf{2.5.2}}}
+			\subsection* {a}
+				Countable
+				\[
+				\begin{matrix}
+					1: 11 \\
+					2: 12 \\
+					3: 13 \\
+					\dots \\
+					n: n+11 
+				\end{matrix}
+				\]
+				
+			\subsection* {b}
+				Countable
+				\[
+					\begin{matrix}
+						1: -1   \\
+						2: -3   \\
+						3: -5   \\
+						\dots   \\
+						n: -2n-1\\
+					\end{matrix}
+				\]
+			\subsection* {c}
+				Finite
+			\subsection* {d}
+				Un countable
+			\subsection* {e} 
+				Countable
+				\[
+					\begin{matrix}
+						1: 10   \\
+						2: 20   \\
+						3: 30   \\
+						\dots   \\
+						n: 10n  \\
+					\end{matrix}
+				\]
+
+		\section* {\Large{\textbf{2.5.4}}}
+			\subsection* {a}
+				Countable
+				\[
+					\begin{matrix}
+						1: 1 + \left \lfloor{\frac{1}{3}}\right \rfloor \\
+						2: 2 + \left \lfloor{\frac{2}{3}}\right \rfloor \\
+						3: 3 + \left \lfloor{\frac{3}{3}}\right \rfloor \\
+						4: 4 + \left \lfloor{\frac{4}{3}}\right \rfloor \\
+						5: 5 + \left \lfloor{\frac{5}{3}}\right \rfloor \\
+						\dots \\
+						n: n + \left \lfloor{\frac{n}{3}}\right \rfloor \\
+					\end{matrix}
+				\]
+			\subsection* {b}
+				Countable
+				\[
+					\begin{matrix}
+						1: 1 + \left \lfloor{\frac{1}{5}}\right \rfloor + \left \lfloor{\frac{1}{7}}\right \rfloor \\
+						\\
+						2: 2 + \left \lfloor{\frac{2}{5}}\right \rfloor + \left \lfloor{\frac{2}{7}}\right \rfloor \\
+						\\
+						3: 3 + \left \lfloor{\frac{3}{5}}\right \rfloor + \left \lfloor{\frac{3}{7}}\right \rfloor \\
+						\\
+						4: 4 + \left \lfloor{\frac{4}{5}}\right \rfloor + \left \lfloor{\frac{4}{7}}\right \rfloor \\
+						\\
+						5: 5 + \left \lfloor{\frac{5}{5}}\right \rfloor + \left \lfloor{\frac{5}{7}}\right \rfloor \\
+						\dots \\
+						n: n + \left \lfloor{\frac{n}{5}}\right \rfloor + \left \lfloor{\frac{n}{7}}\right \rfloor \\
+					\end{matrix}
+				\]
+			\subsection* {c}
+				Uncountable
+			\subsection* {d}
+				Uncountable
+				
+		\section* {\Large{\textbf{2.5.6}}}
+			Every guest who's in an odd number room will move to 3 times their room number. Every guest in an even room number can move to 2 times their room number minus 1. So the guest at room 3 will move to room 9, and the guest from room 2 will move to room 3. Once everyone is moved, they will move over one more time to accommodate the guest from room 1.
+	}
+\end{document}
