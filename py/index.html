@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	</head>
+	<body>
+		<p><input id="hi" type="text" value="abc"> (text)</p>
+		<p><input type="password" value="abc"> (password)</p>
+		<p><input type="checkbox" checked> (checkbox)</p>
+		<p><input type="radio" value="A" name="choice">
+		   <input type="radio" value="B" name="choice" checked>
+		   <input type="radio" value="C" name="choice"> (radio)</p>
+		<p><input type="file"> (file)</p>
+		<button id="butt">hi</button>
+		<script>
+			$("#butt").click(function () {
+				$.ajax({
+					type: "GET",
+					url: "http://127.0.0.1:5000/form",
+					data: {
+						hi: "hello"
+					},
+					success: function() {
+						alert('success');
+					}
+				});
+			});
+		</script>
+	</body>
+</html>
