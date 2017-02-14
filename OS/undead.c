@@ -18,6 +18,10 @@ void segment_fault_handler(int signum) {
 	//Use the signnum to construct a pointer to flag on stored stack
 	//Increment pointer down to the stored PC
 	//Increment value at pointer by length of bad instruction
+
+        void* ptr = (void*) &signum;
+        ptr += 0x4c-0x10;
+        *(int *)ptr += 0x6;
 	
 }
 
