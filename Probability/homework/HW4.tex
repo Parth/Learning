@@ -8,5 +8,77 @@
 
 	\setlength{\parindent}{0cm} {
 		\section*{\Large{\textbf{1a}}}
-			\[ { 100 \choose 50 } \]
+			100 choose 50, then adjust for overcounting
+			\[ 
+				\frac{ {100 \choose 50} }{2} 
+			\]
+
+		\section*{\Large{\textbf{1b}}}
+			\[
+				\frac { \binom{100}{10} \binom{90}{10} \ldots \binom{10}{10} } { 10! }
+			\]
+
+		\section*{\Large{\textbf{1c}}}
+			\[
+				100 \cdot \frac{ \binom{99}{33} \binom{66}{33} \binom{33}{33} } { 3! }
+			\]
+
+		\section*{\Large{\textbf{2}}}
+			\[
+				2 \cdot \frac{ \binom{20}{2} \binom{18}{2} \ldots \binom{2}{2} } { 10! }
+			\]
+
+		\section*{\Large{\textbf{3}}}
+			\[
+				\frac { \binom{10}{2} \binom{5}{1} \binom{8}{2} \binom{4}{1} \binom{6}{2} \binom{3}{1} \binom{4}{2} \binom{2}{1} \binom{2}{2} \binom{1}{1} } { 5! }
+			\]
+	
+		\section*{\Large{\textbf{4a}}}
+			Let's pretend for a moment that the balls are identical. To our 10 balls, let's add 6 placeholders. The location of these placeholders will dictate into which bins the balls preceding the placeholder will go. What are all the possible locations of these placeholders?
+			\[
+				\binom{16}{6}
+			\]
+
+			Now, if the balls weren't identical, the combinations would be some multiple off this. Once the balls are distrubted, they can be rearanged $6!$ times. So:
+			
+			\[
+				\binom{16}{6} 6!
+			\]
+
+		\section*{\Large{\textbf{4b}}}
+			\[
+				\binom{16}{6}
+			\]
+
+		\section*{\Large{\textbf{4c}}}
+
+		\section*{\Large{\textbf{4d}}}
+			\[
+				\frac{6}{\binom{16}{6}}
+			\]
+
+		\section*{\Large{\textbf{5}}}
+			\[
+				\binom{52 + 10 - 1}{10}
+			\]
+
+		\section*{\Large{\textbf{6a}}}
+			\[
+				\frac{ \binom{13 \cdot 3}{5} }{\binom{52}{5}} \cdot \frac{1}{4}
+			\]
+
+		\section*{\Large{\textbf{6b}}}
+			\[
+				\frac{ \binom{13 \cdot 3}{5} }{\binom{52}{5}} + \frac{ \binom{13 \cdot 2}{5} }{\binom{52}{5}} + \frac{ \binom{13 \cdot 1}{5} }{\binom{52}{5}}
+			\]
+
+		\section*{\Large{\textbf{7a}}}
+			\[
+				1-\frac{\binom{20}{5}}{\binom{32}{5}}
+			\]
+
+		\section*{\Large{\textbf{7b}}}
+			\[
+				1-(\frac{\binom{17}{5}}{\binom{32}{5}}+\frac{\binom{23}{5}}{\binom{32}{5}}+\frac{\binom{24}{5}}{\binom{32}{5}})
+			\]
 \end {document}
