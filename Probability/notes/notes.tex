@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+	\title{Discrete II Notes}
+	\author{Parth Mehrotra}
+	\maketitle
+
+	\setlength{\parindent}{0cm} {
+		\section*{\Large{\textbf{Set Theory Review}}}
+
+			Sets are collections of unique elements.
+
+			\subsection*{Complement}
+				Everything that's not in the set. Denoted by \(A'\),  \(A^C\), or \(\overline{A}\)
+			\subsection*{Intersection}
+				An operation that takes two sets, and returns the common elements between them. Denoted by \(A \cap B\)
+
+			\subsection*{Union}
+				An operation that takes two sets, and returns a all the elements that are in \(A\), \(B\), and \(A \cap B\). Denoted by \( A \cup B \).
+
+			\subsection*{De Morgan's Laws}
+				\[ (A \cup B)^C = A^C \cap B^C \]
+				\[ (A \cap B)^C = A^C \cup B^C \]
+
+			\subsection*{Disjoint Sets}
+				\textbf{Disjoint} sets or \textbf{Mutually Exclusive} sets, are sets that have no elements in common. More formally: \((A \cup B) = \emptyset\)
+
+		\section*{\Large{\textbf{Intro to Probability}}}
+			\textbf{Sample Space} of an experiment is the set of all possible outcomes of that experiment.
+			An \textbf{event} is any collection (subset) of outcomes contained in the sample space S. An event is said to be \textbf{simple} if it consists of exactly one outcome and \textbf{compound} if it consists of more than one outcome.
+
+		\section*{\Large{\textbf{Counting}}}
+			For an ordered pair defined by \((x, y)\) where \(x\) can be selected in \(n_1\) ways, and \(y\) can be selected in \(n_2\) ways, the number of pairs is \(n_1 n_2\). Can be extended to \(k\) dimensions. This is known as the \textbf{Multiplication rule}.
+
+			\subsection*{Permutations}
+				For \(k\) selections made \textbf{with replacement} on \(n\) distinct elements, there are \(n^k\) possible outcomes.
+
+				\textbf{Without replacement} however, there are \(n\) options for the first selection, \(n-1\) choices for the next selection, and \(n-k+1\) choice(s) for the \(k^{th}\) selection. This yeilds.
+
+				\[_{n}P_{k} = n(n-1)(n-2) \ldots (n-k+1)\]
+
+			\subsection*{Combinations}
+				Given \(n\) distinct objects, the number of \textbf{unordered} subsets of size \(k\) is given by \(_{n}C_{k}\), or \(\binom{n}{k}\) (\(n\) choose \(k\)).
+
+				\[_{n}C_{k} = \frac{n!}{(n-k)!(k!)} \]
+
+			\subsection*{Overcounting}
+
+			\subsubsection*{Overcounting with Groups}
+
+			\subsection*{Bose Einstein}
+
+	
+\end {document}
