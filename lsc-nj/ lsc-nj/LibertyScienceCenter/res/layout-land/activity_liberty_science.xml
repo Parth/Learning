@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="60dp"
+        android:background="#000"
+        android:orientation="horizontal"
+        android:weightSum="90" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="30"
+            android:adjustViewBounds="false"
+            android:layout_gravity="center"
+            android:text="PNG" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="30"
+            android:adjustViewBounds="false"
+            android:layout_gravity="center"
+            android:text="PNG" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_weight="30"
+            android:adjustViewBounds="false"
+            android:layout_gravity="center"
+            android:text="PNG" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.libertysciencecenter.components.MultiDirectionSlidingDrawer
+            xmlns:my="http://schemas.android.com/apk/res/com.libertysciencecenter"
+            android:id="@+id/drawer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            my:content="@+id/content"
+            my:direction="topToBottom"
+            my:handle="@+id/handle" >
+
+            <ScrollView
+                android:id="@id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FF0000"
+                android:fillViewport="true"
+                android:orientation="vertical" >
+            </ScrollView>
+
+            <Button
+                android:id="@+id/handle"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:background="#0000FF"
+                android:text="PULL" />
+        </com.libertysciencecenter.components.MultiDirectionSlidingDrawer>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">ContactTesterSQL</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_android_sqlite_tutorial">AndroidSQLiteTutorialActivity</string>
+
+</resources>

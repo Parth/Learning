@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/933/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/model
+END
+Neighborhood.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/924/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/model/Neighborhood.java
+END
+Restaurant.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/924/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/model/Restaurant.java
+END
+Borough.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/924/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/model/Borough.java
+END
+DayAndTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/933/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/model/DayAndTime.java
+END
+Grade.java
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/924/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/model/Grade.java
+END
+MealDayTime.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/931/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/model/MealDayTime.java
+END
+Cuisine.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/927/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/model/Cuisine.java
+END
+Address.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/924/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/model/Address.java
+END

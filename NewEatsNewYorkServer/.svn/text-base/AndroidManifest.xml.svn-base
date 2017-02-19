@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.skylight1.neny.android"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    
+    <application
+        android:name=".NewEatsNewYorkApplication"
+        android:icon="@drawable/nyne_logo2"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name=".CompactNewEatsNewYorkActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ShowRestaurantListActivity" />
+        <activity android:name=".SelectDiningTimesActivity" />
+        <activity android:name=".SelectNeighborhoodsActivity" />
+        <activity android:name=".SelectCuisinesActivity" />
+        <activity android:name=".ShowRestaurantDetailActivity" />
+        <activity android:name=".SelectMealTimesActivity" />
+
+        <receiver android:name=".notification.RestaurantNotifier" >
+        </receiver>
+        <receiver android:name=".RestaurantDataDownloadReceiver" >
+        </receiver>
+        <receiver android:name=".BootReceiver" >
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.BOOT_COMPLETED">
+               	</action>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

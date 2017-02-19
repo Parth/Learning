@@ -1,0 +1,176 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:id="@+id/dashboardRoot" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/captureBackground">
+
+        <LinearLayout
+            android:id="@+id/dashboard_capture"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/white_trans"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:paddingBottom="100dp"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/camera"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="#000" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:weightSum="2" >
+
+                <TextView
+                    android:id="@+id/captureText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:gravity="left|center"
+                    android:paddingLeft="20dp"
+                    android:text="@string/camera_button"
+                    android:textColor="#000"
+                    android:textSize="30sp" />
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="top|left"
+                    android:orientation="horizontal"
+                    android:paddingLeft="20dp" >
+
+                    <RadioButton
+                        android:id="@+id/cameraRB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/camera"
+                        android:textColor="#000"
+                        android:textSize="10sp" />
+
+                    <RadioButton
+                        android:id="@+id/galleryRB"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gallery"
+                        android:textColor="#000"
+                        android:textSize="10sp" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/exploreBackground">
+
+        <LinearLayout
+            android:id="@+id/dashboard_explore"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/white_trans"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:src="@drawable/explore"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:background="#000"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/exploreText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:text="@string/explore_button"
+                android:textColor="#000"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:id="@+id/favoritesBackground">
+
+        <LinearLayout
+            android:id="@+id/dashboard_obtain"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/white_trans"
+            android:clickable="true"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/favorites"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="#000" />
+
+            <TextView
+                android:id="@+id/favoritesText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:paddingLeft="20dp"
+                android:text="Wish List!"
+                android:textColor="#000"
+                android:textSize="30sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

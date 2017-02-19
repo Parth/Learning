@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/954/trunk/NewEatsNewYork/src/org/skylight1/neny/android
+END
+ShowRestaurantListActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/948/trunk/NewEatsNewYork/src/org/skylight1/neny/android/ShowRestaurantListActivity.java
+END
+CompactNewEatsNewYorkActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/!svn/ver/952/trunk/NewEatsNewYork/src/org/skylight1/neny/android/CompactNewEatsNewYorkActivity.java
+END
+NewEatsNewYorkActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/932/trunk/NewEatsNewYork/src/org/skylight1/neny/android/NewEatsNewYorkActivity.java
+END
+BootReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/954/trunk/NewEatsNewYork/src/org/skylight1/neny/android/BootReceiver.java
+END
+AlarmUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/954/trunk/NewEatsNewYork/src/org/skylight1/neny/android/AlarmUtils.java
+END
+RefreshDatabaseService.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/924/trunk/NewEatsNewYork/src/org/skylight1/neny/android/RefreshDatabaseService.java
+END
+MealtimeAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svn/!svn/ver/946/trunk/NewEatsNewYork/src/org/skylight1/neny/android/MealtimeAdapter.java
+END
+RestaurantDataDownloadReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/923/trunk/NewEatsNewYork/src/org/skylight1/neny/android/RestaurantDataDownloadReceiver.java
+END
+NewEatsNewYorkApplication.java
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/!svn/ver/954/trunk/NewEatsNewYork/src/org/skylight1/neny/android/NewEatsNewYorkApplication.java
+END
+SelectCuisinesActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/948/trunk/NewEatsNewYork/src/org/skylight1/neny/android/SelectCuisinesActivity.java
+END
+ShowRestaurantDetailActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/!svn/ver/924/trunk/NewEatsNewYork/src/org/skylight1/neny/android/ShowRestaurantDetailActivity.java
+END
+MultiDirectionSlidingDrawer.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/952/trunk/NewEatsNewYork/src/org/skylight1/neny/android/MultiDirectionSlidingDrawer.java
+END
+SelectNeighborhoodsActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/936/trunk/NewEatsNewYork/src/org/skylight1/neny/android/SelectNeighborhoodsActivity.java
+END
+SelectMealTimesActivity.java
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/936/trunk/NewEatsNewYork/src/org/skylight1/neny/android/SelectMealTimesActivity.java
+END
+RestaurantArrayAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svn/!svn/ver/924/trunk/NewEatsNewYork/src/org/skylight1/neny/android/RestaurantArrayAdapter.java
+END
+GetNewRestaurantsTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/924/trunk/NewEatsNewYork/src/org/skylight1/neny/android/GetNewRestaurantsTask.java
+END
+RefreshDatabaseServiceBroadcastReceiver.java
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/923/trunk/NewEatsNewYork/src/org/skylight1/neny/android/RefreshDatabaseServiceBroadcastReceiver.java
+END

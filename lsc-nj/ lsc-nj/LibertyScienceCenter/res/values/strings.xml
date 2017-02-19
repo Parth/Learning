@@ -1,0 +1,8 @@
+<resources>
+
+    <string name="app_name">LibertyScienceCenter</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_liberty_science">Liberty Science Center</string>
+
+</resources>

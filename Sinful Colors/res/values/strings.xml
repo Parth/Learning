@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Sinful Colors</string>
+    <string name="menu_settings">Settings</string>
+    <string name="camera_button">Capture</string>
+    <string name="explore_button">Explore</string>
+    <string name="obtain_button">Obtain</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="r">R:</string>
+    <string name="g">G:</string>
+    <string name="b">B:</string>
+    <string name="go">Find closest match!</string>
+
+</resources>

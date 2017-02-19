@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.libertysciencecenter"
+    xmlns:app="http://schemas.android.com/apk/res/com.libertysciencecenter"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical"
+        android:weightSum="91" >
+
+        <LinearLayout
+            android:id="@+id/dashboard_tour_touchzone"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.libertysciencecenter.components.FontTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/tours"
+                    android:textColor="#2c737f"
+                    android:textSize="30dp"
+                    custom:customFont="verdana.ttf" >
+                </com.libertysciencecenter.components.FontTextView>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:background="#2c737f" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/dashboard_tour_3" >
+            </ImageView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0dp" 
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:background="#FFF" />
+
+        <LinearLayout
+            android:id="@+id/dashboard_events_touchzone"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.libertysciencecenter.components.FontTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/events"
+                    android:textColor="#2c737f"
+                    android:textSize="30dp"
+                    custom:customFont="verdana.ttf" >
+                </com.libertysciencecenter.components.FontTextView>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:background="#2c737f" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:padding="20dp"
+                android:layout_weight="1"
+				android:src="@drawable/dashboard_events" >
+            </ImageView>
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.5"
+            android:background="#FFF" />
+
+        <LinearLayout
+            android:id="@+id/dashboard_exhibits_touchzone"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.libertysciencecenter.components.FontTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="####"
+                    android:textColor="#2c737f"
+                    android:textSize="30dp"
+                    custom:customFont="verdana.ttf" >
+                </com.libertysciencecenter.components.FontTextView>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:background="#2c737f" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="#fff" >
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.libertysciencecenter.components.MultiDirectionSlidingDrawer
+            xmlns:my="http://schemas.android.com/apk/res/com.libertysciencecenter"
+            android:id="@+id/drawer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            my:content="@+id/content"
+            my:direction="topToBottom"
+            my:handle="@+id/handle" >
+
+            <ScrollView
+                android:id="@id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FF0000"
+                android:fillViewport="true"
+                android:orientation="vertical" >
+            </ScrollView>
+
+            <Button
+                android:id="@+id/handle"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="#0000FF"
+                android:text="THIS WILL BE A MAP PULLDOWN" />
+        </com.libertysciencecenter.components.MultiDirectionSlidingDrawer>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+10
+
+dir
+11
+https://subversion.assembla.com/svn/myhouse/MyHouse/res
+https://subversion.assembla.com/svn/myhouse
+
+
+
+2012-12-29T06:54:50.595390Z
+3
+parthmehrotra
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+60554ea4-2112-4f11-a8e1-3a375705a0ea
+
+drawable-hdpi
+dir
+
+drawable-ldpi
+dir
+
+drawable-mdpi
+dir
+
+drawable-xhdpi
+dir
+
+layout
+dir
+
+menu
+dir
+
+values
+dir
+
+values-large
+dir
+
+values-v11
+dir
+
+values-v14
+dir
+

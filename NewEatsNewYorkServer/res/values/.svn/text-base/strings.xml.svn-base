@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, NewEatsNewYorkActivity!</string>
+    <string name="app_name">NewEatsNewYork</string>
+    <string name="server">http://nenyserver.appspot.com/newRestaurants</string>
+	<string name="emu_server">http://10.0.2.2:8888/newRestaurants</string>
+	<string name="home_server">http://192.168.1.4:8888/newRestaurants</string>
+	<string name="update_restaurant_list">Update Restaurant List</string>
+	<string name="choose_cuisines">Cuisines</string>
+	<string name="choose_neighborhoods">Neighborhoods</string>
+	<string name="choose_times">Dining Times</string>
+	<string name="show_restaurants">Show Restaurants</string>
+	<string name="call">Call</string>
+	<string name="phone">Phone:</string>
+	<string name="building">Building:</string>
+	<string name="street">Street:</string>
+	<string name="zipcode">Zip Code:</string>
+	<string-array name="neighborhoods">
+	    <item>Inwood</item>
+	    <item>Harlem</item>
+	    <item>East Harlem</item>
+	    <item>Upper West Side</item>
+	    <item>Upper East Side</item>
+	    <item>Chelsea</item>
+	    <item>Gramercy</item>
+	    <item>Greenwich / Soho</item>
+	    <item>Lower East Side</item>
+	    <item>East Village</item>
+	    <item>Wall Street</item>
+	</string-array>	
+    <string name="lunch">Lunch</string>
+    <string name="dinner">Dinner</string>
+    <string name="sunday">SUN</string>
+    <string name="monday">MON</string>
+    <string name="tuesday">TUE</string>
+    <string name="wednesday">WED</string>
+    <string name="thursday">THU</string>
+    <string name="friday">FRI</string>
+   <string name="saturday">SAT</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="day">Day</string>
+
+</resources>

@@ -1,0 +1,12 @@
+K 10
+svn:ignore
+V 9
+gen
+
+bin
+
+K 13
+svn:mergeinfo
+V 29
+/branches/MarkAndroid:895-898
+END

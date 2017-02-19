@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/948/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/dao
+END
+PreferencesDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/934/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/dao/PreferencesDao.java
+END
+NeighborhoodPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/!svn/ver/948/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/dao/NeighborhoodPreferences.java
+END
+MealTimePreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/934/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/dao/MealTimePreferences.java
+END
+AbstractPreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/934/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/dao/AbstractPreferences.java
+END
+CuisinePreferences.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/948/trunk/NewEatsNewYork/src/org/skylight1/neny/android/database/dao/CuisinePreferences.java
+END

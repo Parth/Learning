@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res/com.libertysciencecenter"
+    xmlns:app="http://schemas.android.com/apk/res/com.libertysciencecenter"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal"
+        android:weightSum="91" >
+
+        <LinearLayout
+            android:id="@+id/dashboard_tour_touchzone"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="@drawable/dashboard_tour_3" >
+            </ImageView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.libertysciencecenter.components.FontTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tourDivider"
+                    android:text="@string/tours"
+                    android:textColor="#2c737f"
+                    android:textSize="30sp"
+                    custom:customFont="verdana.ttf" >
+                </com.libertysciencecenter.components.FontTextView>
+
+                <View
+                    android:id="@+id/tourDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_centerInParent="true"
+                    android:background="#2c737f" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:background="#FFF" />
+
+        <LinearLayout
+            android:id="@+id/dashboard_events_touchzone"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:src="@drawable/dashboard_events" >
+            </ImageView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.libertysciencecenter.components.FontTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/eventsDivider"
+                    android:layout_gravity="center"
+                    android:text="@string/events"
+                    android:textColor="#2c737f"
+                    android:textSize="30sp"
+                    custom:customFont="verdana.ttf" >
+                </com.libertysciencecenter.components.FontTextView>
+
+                <View
+                    android:id="@+id/eventsDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_centerInParent="true"
+                    android:background="#2c737f" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:background="#FFF" />
+
+        <LinearLayout
+            android:id="@+id/dashboard_exhibits_touchzone"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="30"
+            android:orientation="vertical"
+            android:weightSum="2" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:src="#fff" >
+            </ImageView>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <com.libertysciencecenter.components.FontTextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/exhibitsDivider"
+                    android:layout_gravity="center"
+                    android:text="####"
+                    android:textColor="#2c737f"
+                    android:textSize="30sp"
+                    custom:customFont="verdana.ttf" >
+                </com.libertysciencecenter.components.FontTextView>
+
+                <View
+                    android:id="@+id/exhibitsDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="5dp"
+                    android:layout_centerInParent="true"
+                    android:background="#2c737f" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <com.libertysciencecenter.components.MultiDirectionSlidingDrawer
+            xmlns:my="http://schemas.android.com/apk/res/com.libertysciencecenter"
+            android:id="@+id/drawer"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            my:content="@+id/content"
+            my:direction="topToBottom"
+            my:handle="@+id/handle" >
+
+            <ScrollView
+                android:id="@id/content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#FF0000"
+                android:fillViewport="true"
+                android:orientation="vertical" >
+            </ScrollView>
+
+            <Button
+                android:id="@+id/handle"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="#0000FF"
+                android:text="THIS WILL BE A MAP PULLDOWN" />
+        </com.libertysciencecenter.components.MultiDirectionSlidingDrawer>
+    </FrameLayout>
+
+</RelativeLayout>

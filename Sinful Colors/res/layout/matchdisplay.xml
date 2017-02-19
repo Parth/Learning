@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#000" >
+
+        <ImageView
+            android:id="@+id/matchdisplay_background"
+            android:layout_width="126dp"
+            android:layout_height="300dp" 
+            android:background="@drawable/shades_247"
+            android:layout_gravity="center"
+            android:src="@drawable/bottle_overlay" />
+    </FrameLayout>
+
+</LinearLayout>
