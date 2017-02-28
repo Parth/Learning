@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+	\title{Discrete II Homework 5}
+	\author{Parth Mehrotra}
+	\maketitle
+
+	\begin{enumerate}
+
+		\item 
+			Give a story proof that
+			\[
+			\sum_{k=1}^n k \binom{n}{k}\binom{n}{n-k} = n \binom{2n -1}{n-1}
+			\]
+			for all positive integers $n$. \textbf{(10 pts)}
+
+			\emph{Hint:  Consider choosing a committee of size $n$ and a president (who is on the committee) from a
+			group of $n$ freshman and $n$ sophomores, where only freshman are eligible to
+			be president.  Argue that both sides of the equation count this, starting
+			with the right hand side which is easier.}\\
+
+			\textbf{
+				Let's look at the right side first. Our decision process for counting the situation in the \emph{hint} above could be: First choose a president from the group of freshman. There are \(n\) choices for this. Then from the remaining set of students \((2n -1)\), choose a group of \(n-1\) students. This gives us the right side: 
+				\[ n \binom{2n-1}{n-1} \]
+				The left side of the equation employes a slightly non-obvious strategy. It takes the variable \(k\) from \(1\) to \(n\). This represents the decision "How many freshman are going to be in this group?". From this group there are \(k\) possibilities for a president, and \(\binom{n}{k}\) possibilities for the rest of the group of freshman. Then from the sophomores, based on how many freshman are in our group, we choose \(n-k\) more stodents. Which finally gives us, the left side:
+				\[
+					\sum_{k=1}^n k \binom{n}{k}\binom{n}{n-k}
+				\]
+			}
+
+		\item
+			\begin{itemize}
+				\item \(P(A) = 0.5\)
+				\item \(P(B) = 0.4\)
+				\item \(P(A \cap B) = 0.25\)
+			\end{itemize}
+			\begin{enumerate}
+				\item 
+					\[P(A \cup B) = P(A) + P(B) - P(A \cap B) \]
+					\[P(A \cup B) = 0.5 + 0.4 - 0.25 \]
+					\[P(A \cup B) = 0.65\]
+				\item
+					\[P((A \cup B)^C) = 1-P(A \cup B) \]
+					\[P((A \cup B)^C) = 0.35\]
+				\item
+					\[P(A) - P(A \cap B) = 0.5 - 0.25 = 0.25 \]
+			\end{enumerate}
+
+		\item
+			If set \(B\) is a subset of set \(A\), then \(|B| < |A|\). If they are both subsets of some universe \(U\), the probability of an event in \(A\) happening is \(\frac{|A|}{|U|}\). Similarly the probability of an event in \(B\) happening is \(\frac{|B|}{|U|}\). If \(|B| < |A|\) then \(P(B) < P(A)\). This implies that \(P(A \cap B) = P(B)\), and \(P(A \cup B) = P(A)\).
+	\end{enumerate}
+\end {document}

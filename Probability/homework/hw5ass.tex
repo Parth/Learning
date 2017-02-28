@@ -1,0 +1,193 @@
+\def\llncs{0}       % 1 = using llncs
+
+
+
+\documentclass[11pt]{article}
+%\usepackage[margin=1.25in]{geometry}
+%\usepackage[letterpaper,hmargin=1.25in,vmargin=1.25in]{geometry}
+\usepackage{fullpage}
+\usepackage{amsthm}
+
+\usepackage{amsthm,amsmath,amsfonts,amssymb,amstext}
+\usepackage{latexsym,ifthen,url,rotating}
+
+%\usepackage[pdftex,usenames,dvipsnames]{color}
+\usepackage[usenames,dvipsnames]{color}
+
+\ifnum\llncs=0
+\ifx\pdfoutput\undefined 
+
+%% latex
+
+\else
+
+%% pdflatex
+
+ \usepackage[pdftex,
+    pdffitwindow,
+    plainpages=false,
+    pdfpagelabels=true,
+    pdfborder={0 0 0},
+    bookmarks=true,
+    bookmarksnumbered=true,
+    bookmarksopen=false
+ ]{hyperref}
+
+\fi
+\fi
+
+% --- -----------------------------------------------------------------
+% --- Document-specific definitions.
+% --- -----------------------------------------------------------------
+\newtheorem{definition}{Definition}
+
+\newcommand{\concat}{{\,\|\,}}
+\newcommand{\bits}{\{0,1\}}
+
+% --- -----------------------------------------------------------------
+% --- The document starts here.
+% --- -----------------------------------------------------------------
+\begin{document}
+%\maketitle
+\sloppy
+
+\noindent Rutgers University\\
+CS206: Introduction to Discrete Structures II, Spring 2017\\
+Professor David Cash\\
+
+\begin{center}
+\LARGE{\textbf{Homework 5}}\\
+\large{\textbf{\emph{Due at 9am on Tuesday, Feb 28}}}
+\end{center}
+
+\vspace{.1in}
+
+\noindent\textbf{Instructions:} \begin{itemize}
+
+\item Follow the collaboration policy stated in class:  You may discuss
+problems together \emph{but you must write up your own solutions}.  You should
+never see your collaborators' papers.  If we detect copying, it may be reported
+to the administration.
+
+\item Submitting homework:  You may bring your written homework to class.  You
+may instead opt to turn your homework in via Sakai, but we will only accept
+\emph{typed} solutions, as PDFs created using a program like MS Word (using
+print to pdf), or ideally, Latex\footnote{See, for
+example~\url{https://www.latex-project.org/get/}, and numerous tutorials
+online.  Latex is the standard language for producing nice-looking documents
+with lots of math (including homework and exams in this class).}.  \textbf{Let
+me repeat: If submitting via Sakai, you must type up your solutions as a PDF
+file.  Scans and images of handwritten documents will not be accepted.}
+
+\item Point values for each problem are listed.  Some homework assignments will
+be worth more points than others.  
+
+\item Homework grades are not curved.  You should aim to earn all of the points
+on each homework, and I encourage you seek out help via office hours,
+recitation, and the study group.
+
+\end{itemize}
+
+
+
+\noindent\textbf{Graded Problems:}
+
+
+\begin{enumerate}
+
+\item 
+Give a story proof that
+\[
+\sum_{k=1}^n k \binom{n}{k}\binom{n}{n-k} = n \binom{2n -1}{n-1}
+\]
+for all positive integers $n$. \textbf{(10 pts)}
+
+\emph{Hint:  Consider choosing a committee of size $n$ and a president (who is on the committee) from a
+group of $n$ freshman and $n$ sophomores, where only freshman are eligible to
+be president.  Argue that both sides of the equation count this, starting
+with the right hand side which is easier.}
+
+\item Problem 14 in section 1.2.5. \textbf{(6 pts)}
+
+\item Problem 26 in section 1.2.5. \textbf{(6 pts)}
+
+\item Suppose we deal a 5 card hand from a standard deck.  What is the
+probability that the hand is all Spades, given that it has at least two
+Spades? \textbf{(6 pts)}
+
+\item The Jack of Spades (with cider), Jack of Hearts (with tarts), 
+Queen of Spades (with a wink), and Queen of Hearts (without tarts) are
+taken from a deck of cards.  These four cards are shuffled, and then two are
+dealt.
+
+\begin{enumerate}
+\item Find the probability that both of these two cards are queens, given
+that the first card dealt is a queen. \textbf{(5 pts)}
+
+\item Find the probability that both of these two cards are queens, given
+that at least one is a queen. \textbf{(5 pts)}
+
+\item Find the probability that both of these two cards are queens, given
+that one is Queen of Hearts. \textbf{(5 pts)}
+
+\end{enumerate}
+
+\item Let $A$ and $B$ be events with $0 < P(A \cap B) < P(A) < P(B) < P(A \cup
+B) < 1$.  You are hoping that \emph{both} $A$ and $B$ occurred.  Which of the
+following piece of information would you be happiest to observe:  That $A$
+occurred, that $B$ occurred, or that $A\cup B$ occurred? \textbf{(6 pts)}
+
+
+\item According to the CDC (Centers for Disease Control and Prevention),
+men who smoke are 23 times more likely to develop lunch cancer than men
+who don't smoke.  Also according to the CDC, 21.6\% of men in the U.S. smoke.
+What is the probability that a man in the U.S. is a smoker, given that he
+develops lung cancer? \textbf{(6 pts)}
+
+\item A hat contains 100 coins, where 99 are fair but one is double-headed
+(always landing Heads).  A coin is chosen uniformly at random.  The chosen coin
+is flipped 7 times, and it lands Heads all 7 times.  Given this information,
+what is the probability that the chosen coin is double-headed? \textbf{(6 pts)}
+
+
+
+\item \textbf{Extra credit.} In this problem we will find a proof that
+\[
+\binom{\binom{n}{2}}{2} = 3\binom{n+1}{4}.
+\]
+This is broken into sub-problems below.
+\begin{enumerate}
+
+\item  How many ways are there to select $4$ people from
+a group of $n$, and then break those $4$ people into
+two teams of two?  (The order of the teams does not matter.) \textbf{(3 pts)}
+
+\item How many ways are there to select $3$ people from a group of
+$n$, and then from those $3$ people, create two teams of two that have exactly
+one
+overlapping member?  (Here the order of those two teams does not matter, like
+the first part.) \textbf{(3 pts)}
+
+\item By simplifying and applying Pascal's relation argue that the
+sum of your answers from the first two parts equals $3\binom{n+1}{4}$.
+\textbf{(3 pts)}
+
+\item Give a story proof that $\binom{\binom{n}{2}}{2}$ is also
+equal to the sum of your answers from the first two parts.  This will complete
+the proof of the identity.
+\textbf{(3 pts)}
+
+\emph{Hint:  Observe that $\binom{n}{2}$ is the number of ways we can form a
+group of two from amongst $n$ possible people.  $\binom{\binom{n}{2}}{2}$ is
+the number of ways we can pick two different groups of two.}
+
+\end{enumerate}
+
+
+
+\end{enumerate}
+
+
+
+\end{document}
+

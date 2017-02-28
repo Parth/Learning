@@ -45,11 +45,42 @@
 
 				\[_{n}C_{k} = \frac{n!}{(n-k)!(k!)} \]
 
-			\subsection*{Overcounting}
-
-			\subsubsection*{Overcounting with Groups}
+			\subsection*{Overcounting with Groups}
+				For \(n\) distinct objects being devided into \(k\) groups, \(\binom{n}{k} \) over counts by a factor of \(k!\). To account for that, we do the following:
+				\[
+					\frac{\binom{n}{k}}{k!}
+				\]
 
 			\subsection*{Bose Einstein}
+				For counting ways to separate \(n\) indistinguisable objects into \(k\) groups. We can use the following:
+					\[
+						\binom{n - 1 + k}{k}
+					\]
 
-	
+				Analogy: For splitting \(n\) peices of candies between \(k\) kids, add \(k-1\) placeholder candies. \(\binom{n-1+k}{k}\) represents all the ways the dividers can be placed, such that the kids get the candy.
+
+			\subsection*{Counting methods summary}
+				Box with all the formulas.
+
+		\section*{\Large{\textbf{Set inclusion/exclusion principal}}}
+		\section*{\Large{\textbf{Conditional Probability}}}
+			\(P(A | B)\) represents the probability that \(A\) happens, given that \(B\) \emph{already} happened.
+			\[
+				P(A | B) = \frac{P(A \cap B)}{P(B)}
+			\]
+
+			\subsection*{Bayes' Theorem}
+				
+				Sometimes we don't have some of those probabilities. In this situation, we can use Bayes' Theorem:
+				\[
+					P(A|B) = \frac{P(B | A) P(A)}{P(B)} 
+				\]
+
+			\subsection*{Law of total probability}
+				For an \(A, B\) where \( P(B) \neq 0 \) and \( P(B) \neq 1\)
+
+				\[
+					P(A) = P(A|B) \cdot P(B) + P(A | B^C) \cdot P(B^C)
+				\]
+
 \end {document}

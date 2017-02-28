@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+	\title{Discrete II Notes}
+	\author{Parth Mehrotra}
+	\maketitle
+
+	\setlength{\parindent}{0cm} {
+		\section*{\Large{\textbf{Probability Theory}}}
+			Dealing when outcomes are not equally likely, or infinite sample space. 
+			\[ P(S) = 1\]
+			\[ P(E^C) = 1 - P(E) \]
+
+			\subsection*{Axioms of Probability}
+				\begin{itemize}
+					\item Probabilities cannot be negative, \[P(E) >= 0 for every E \]
+					\item P(S) = 1 }
+					\item For any sequence of events that are mutually exclusive \(A_1, A_2, ... \) \(P(A_1 \cup A_2 \cup \ldots) = P(A_1) + P(A_2) \ldots \)
+				\end{itemize} 
+
+				Also \( P(\emptyset) = 0 \).
+				Proof: Apply 3
+				\[A_1 = \emptyset, A_2 = \emptyset, \ldots \]
+				\[P(\emptyset \cup \emptyset \cup \ldots) = P(\emptyset) + P(\emptyset) + \ldtos \]
+
+				For every finite sequence of events
+				\[ A_1, \ldots, A_n\]
+
+				\[ P(A_1 \cup \ldots \cup A_n) = The sum from limit i = 1 to n of P(A_i) \]
+				
+				Proof: 
+				\[ From A_1, \ldots, A_n define A_i = \emptyset for all i > n A_1, \ldots, A_n, \emptyset, \emptyset, \ldots \]
+
+				
