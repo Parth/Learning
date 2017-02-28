@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.13)  27 FEB 2017 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.13)  27 FEB 2017 21:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -198,7 +198,7 @@ dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016basic/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016basic/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2016bas
 ic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on HW5.pdf (2 pages, 125793 bytes).
+Output written on HW5.pdf (2 pages, 128777 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  42 compressed objects within 1 object stream
