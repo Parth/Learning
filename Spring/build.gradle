@@ -1,0 +1,11 @@
+group 'com.teamtreehouse'
+version '1-0-SNAPSHOT'
+
+apply plugin: 'java-library'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+}
