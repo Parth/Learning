@@ -60,9 +60,22 @@
 				Analogy: For splitting \(n\) peices of candies between \(k\) kids, add \(k-1\) placeholder candies. \(\binom{n-1+k}{k}\) represents all the ways the dividers can be placed, such that the kids get the candy.
 
 			\subsection*{Counting methods summary}
-				Box with all the formulas.
+				\begin{center}
+					\begin{tabular}{ |c| c c| }
+					\hline
+					& With order & Without Order \\
+					\hline
+					With replacement & \( n^k \) & \( \binom{n-1+k}{k}\) \\
+					\hline
+					Without Replacement & \(\frac{n!}{(n-k)!}\) & \(\binom{n}{k} \) \\
+					\hline
+					\end{tabular}
+				\end{center}
 
 		\section*{\Large{\textbf{Set inclusion/exclusion principal}}}
+
+			\[ |A \cup B| = |A| + |B| - |A \cap B| \]
+			\[ |A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap B| - |B \cap C| + |A \cap B \cap C| \]
 		\section*{\Large{\textbf{Conditional Probability}}}
 			\(P(A | B)\) represents the probability that \(A\) happens, given that \(B\) \emph{already} happened.
 			\[

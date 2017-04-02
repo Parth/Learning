@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+	\title{Discrete II Homework 8}
+	\author{Parth Mehrotra}
+	\maketitle
+
+	\begin{enumerate}
+
+		\item 
+			X = First dice, Z = sum of dice. \(X\) and \(Z\) are not indpendent events:
+			
+			\[ P(X=4) = \frac{2}{6} \] 
+			\[ P(Z=4) = \frac{5}{\binom{6}{2}} \]
+			\[ P(X=4, Z=4) = 0 \]
+
+			\[ P(X=4) \cdot P(Z=4) \neq P(X=4, Z=4) \]
+
+			Expected value for \(X\) is:
+			
+			\[E(X) = \frac{1}{6} \cdot (2*1 + 2 + 3 + 4*2) = 2.5 \] 
+			\[E(Z) = 2 \cdot E(X) = 5\]
+
+		\item
+			Probability distribution for \(X\) and \(Y\): 
+			\begin{center}
+				\begin{tabular}{ c c c }
+					  & 0 & 1 \\
+					0 & \( \frac{1}{2} \cdot p \) & \( \frac{1}{2} \cdot (1-p) \) \\
+					1 & \( \frac{1}{2} \cdot p \) & \( \frac{1}{2} \cdot (1-p) \) \\
+				\end{tabular}
+			\end{center}
+
+			\[ P(same) = \frac{1}{2} \cdot p + \frac{1}{2} \cdot (1-p) = \frac{1}{2}\]
+			\[ P(different) = 1 - P(same) = \frac{1}{2} \]
+
+			\(X\) and XOR will always be independent, \(Y\) will only be independent if \(p=0.5\).
+
+		\item
+			Sample space for \(X\) is \(\{4, 5, 6, 7\}\).
+			
+			\[P(X=4) = \frac{2}{2^4} = \frac{1}{8} \]
+			\[P(X=5) = 2 \cdot \binom{4}{3} \cdot \frac{1}{2}^5 = \frac{1}{4} \] 
+			\[P(X=6) = 2 \cdot \binom{6}{3} \cdot \frac{1}{2}^6 = \frac{5}{16} \]
+			\[P(X=7) = 2 \cdot \binom{6}{3} \cdot \frac{1}{2}^7 = \frac{5}{32} \]
+
+			\[ E(X) = \frac{1}{8} \cdot 4 + \frac{1}{4} \cdot 5 + \frac{5}{16} \cdot 6 + \frac{5}{32} \cdot 7 \]
+
+		\item
+			
+
+	\end{enumerate}
+\end {document}
