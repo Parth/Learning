@@ -1,12 +1,22 @@
 group 'com.teamtreehouse'
-version '1-0-SNAPSHOT'
+version '1.0-SNAPSHOT'
 
-apply plugin: 'java-library'
+buildscript{
+    repositories{
+        mavenCentral()
+    }
+    dependencies{
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.5.2.RELEASE'
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'spring-boot'
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 dependencies {
-	compile 'org.springframework.boot:spring-boot-starter-web'
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
 }
