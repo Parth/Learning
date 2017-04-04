@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.13)  3 APR 2017 22:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.2.13)  3 APR 2017 22:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -108,8 +108,22 @@ File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 115.
- [3] [4]
-(./notes.aux) )
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--123
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 124--125
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+
+ []
+
+[4] (./notes.aux) )
 (\end occurred inside a group at level 1)
 
 ### simple group (level 1) entered at line 9 ({)
@@ -121,7 +135,7 @@ Here is how much of TeX's memory you used:
  4249 multiletter control sequences out of 15000+600000
  9369 words of font info for 34 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 27i,9n,20p,328b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,9n,20p,332b,187s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016basic/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmbx10.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016basic/texmf-dist/fonts/type1/pu
@@ -136,7 +150,7 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016basic
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016b
 asic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
 16basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on notes.pdf (4 pages, 146498 bytes).
+Output written on notes.pdf (4 pages, 146519 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  49 compressed objects within 1 object stream
