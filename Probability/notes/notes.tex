@@ -109,7 +109,49 @@
 					P(A \cap B) = P(A) \cdot P(B)
 				\]
 
-			\subsection*{Mutual Independence}
+			\subsection*{Multiple levels of independence}
+				Types of independence between n events:
+				\begin{itemize}
+					\item Pairwise independence all pairs of events within n are independent.
+					\item K-wise independence all k sets of events are independent.
+					\item Mutual independence all k-wise sets are independent.
+				\end{itemize} 
+
+		\section*{\Large{\textbf{Random Variables}}}
 			
+			For a given sample space, a \textbf{random variable} is any rule that associates a number with each outcome. Customarily denoted by uppercase letters, such as X and Y, near the end of our alphabet. Lowercase letters are used to represent some particular value of the corresponding random variable.  \\
+
+			Any random variable whose only possible values are 0 and 1 is called a \textbf{Bernoulli random variable}. (1 usually indicates success) \\ 
+
+			A \textbf{discrete} random variable's values are either a finite set of integers. They are countable. \\ 
+
+			A \textbf{continuous} random variable can take on any value within a given interval.
+
+			\subsection*{Probability distribution}
+				A \textbf{probability distribution} or a \textbf{probability mass function} of a discrete random variable is defined for every number \(x\). For every possible value x of the random variable, the pmf specifies the probability of observing that value when the experiment is performed.
+
+			\subsection*{Binomial distribution}
+				An experiment where there are 2 outcomes with a given probability, with n trials.
+				Criteria for a binomial distribution:
+
+				\begin{enumerate}
+					\item n trials
+					\item 2 possible outcomes per trial
+					\item trials are independent
+					\item a single p that does not change
+				\end{enumerate}
+
+				\[
+					Binom(x, n, p) = \binom{n}{x} p^x(1-p)^{n-x}
+				\]
+
+			\subsection*{Cumulative Distribution Function}
+				For a probability distribution at a fixed point \(x\), we wish to compute the probability that the observed value of \(X\) will be at most \(x\). We're interested in the sum of all the values until, this point.
+
+				The \textbf{CDF} is defined by:
+
+				\[
+					F(X) = P(X \leq x) = \sum\limits_{y:y \leq x} p(y)
+				\]
 
 \end {document}
