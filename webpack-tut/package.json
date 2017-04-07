@@ -1,0 +1,16 @@
+{
+	"name": "webpack-tut",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"clean": "rimraf dist",
+		"build": "webpack --watch",
+		"start": "http-server"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"webpack": "^2.3.3"
+	}
+}
