@@ -1,16 +1,19 @@
 {
-	"name": "webpack-tut",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"clean": "rimraf dist",
-		"build": "webpack --watch",
-		"start": "http-server"
-	},
-	"author": "",
-	"license": "ISC",
-	"dependencies": {
-		"webpack": "^2.3.3"
-	}
+  "name": "webpack-tut",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "webpack --watch",
+    "start": "http-server",
+    "dev" : "webpack-dev-server"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^2.3.3",
+    "webpack-dev-server": "^2.4.2"
+  }
 }
