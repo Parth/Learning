@@ -1,0 +1,20 @@
++ data.head() # get 5
++ data.loc[2] # get record
++ data.coffees[:5] # first 5 entries in the coffees serries
++ data.dtypes # what the types of the columns in the dataframe is 
+
+# Cleaning data 
+
++ data.coffees = pandas.to_numeric(data.coffees, errors="coerce")
++ data.dropna()
++ data.dropna(inplace=True)
++ data.coffees = data.coffees.astype(int)
++ data.timestamp = pd.to_datetime(data.timestamp)
+
++ data.describe(include="all")
+
++ data.coffees.plot()
+
+# Data Slicing/Accessing/Querying
+
++ data[data.timestamp < "2013-03n-01"] 
